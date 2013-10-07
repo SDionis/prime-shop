@@ -1,0 +1,79 @@
+.save_button_container{
+    width:80%;
+    margin:0 auto;
+    text-align: right;
+}
+table.top_table {
+    margin: 0 auto;
+    width: 80%;
+    font-size:20px;
+    
+}
+input[type="text"] {
+    margin-top:10px;
+    font-size:20px !important;
+    width:80%;
+    /*height:24px !important;*/
+}
+
+input[type="checkbox"] {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+input[type="submit"] {
+    margin-top:10px;
+    font-size:20px !important; 
+}
+input[type="button"] {
+    margin-top:10px;
+    font-size:20px !important; 
+}
+input[type="password"] {
+    margin-top:10px;
+    font-size:20px !important;
+    width:80%;
+}
+
+textarea {
+    margin-top:10px;
+    font-size:20px !important;
+    width:80%;
+    height: 80px;
+}
+select {
+    margin-top:10px;
+    font-size:20px !important;
+    width:80%;
+    height: 35px;
+}
+.td_name {
+    width:20%;
+    text-align: center;
+}
+.tr_data{
+    border:1px dashed black;
+}
+a {
+    margin-top:10px;
+    margin-bottom: 10px;
+    display: block;
+}
+a.del_icon_pictures, a.del_icon_barcode, a.del_icon_dataTour{
+    display: inline;
+    margin-left: 10px;
+}
+.td_params input{
+    width:80%;
+    text-align: center;
+}
+.table_params {
+    width:100%;
+    margin: 2px;
+}
+.table_params tr.text_only{
+    padding:4px;
+}
+.table_params td {
+    border: 1px dotted black;
+    text-align: center;
+}
