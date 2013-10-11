@@ -12,6 +12,9 @@ class FaceController extends Controller {
         $this->index_point = $index_point[0];
         $index_point_without_slash = explode('/index.php', $_SERVER['SCRIPT_NAME'], 2);
         $this->index_point_without_slash = $index_point_without_slash[0];
+        if ($this->index_point_without_slash == '') {
+        	$this->index_point_without_slash = '/';
+        }
         Yii::app()->layout = 'face';
         $this->layout = 'face';
         //require_once($_SERVER['DOCUMENT_ROOT'].$index_point[0].'libs/AcImage/AcImage.php');
