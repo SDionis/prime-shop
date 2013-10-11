@@ -10,6 +10,7 @@ class ControlController extends Controller
         Yii::app()->layout = 'control';
         $this->layout = 'control';
         //$this->with_hashing = 1;
+        
         session_start();
         
         chdir(dirname($_SERVER['SCRIPT_FILENAME']).'/conf');
@@ -130,7 +131,7 @@ class ControlController extends Controller
             $parser->parse($_FILES['uploadFile']['tmp_name'], $offer_id);
             $_SESSION['success_mess'] = 1;
         }
-		if (empty($_FILES) && !empty($_POST) && $_POST['ymlftp'] == 1){
+		if (empty($_FILES) && !empty($_POST) && $_POST['ymlftp'] == 1 && !empty($_POST['xml_file'])) {
 			$filename = $_SERVER['DOCUMENT_ROOT'].$this->index_point.'ymlftp/'.$_POST['xml_file'];
 			if (file_exists($filename)) {
 				$offer_id = $_POST['offer_id'];
@@ -568,5 +569,18 @@ class ControlController extends Controller
         
         $output_array = array('message' => $message);
         $this->render('site/DownloadAllImages', $output_array);
+    }
+    
+    public function actionCounts () {
+    	$shop = new Shop();
+    	if (!empty($_POST)) {
+    		$shop->updateCounts('google_analitics', $_POST['google_analitics']);
+    		$shop->updateCounts('yandex_metrika', $_POST['yandex_metrika']);
+    		header('Location: '.$_SERVER['REDIRECT_URL']);
+    		exit;
+    	}
+    	$counts = $shop->getCounts();
+    	$output_array = array('counts' => $counts);
+    	$this->render('site/Counts', $output_array);
     }
 }

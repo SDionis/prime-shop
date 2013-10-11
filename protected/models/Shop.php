@@ -56,6 +56,39 @@ class shop {
     	$command->execute();
     }
     
+    public function getCounts(){
+    	$db = Yii::app()->db;
+    	$sql = "SELECT * FROM `counts`";
+    	$command = $db->createCommand($sql);
+    	$result = $command->queryAll();
+    	$out = array();
+    	foreach($result as $val) {
+    		$out[$val['name']] = $val['script'];
+    	}
+    	return $out;
+    }
+    
+    public function updateCounts($name, $val) {
+    	$db = Yii::app()->db;
+    	$sql = "SELECT count(*) amount FROM `counts` WHERE `name` = ".$db->quoteValue($name);
+    	$command = $db->createCommand($sql);
+    	$result = $command->queryScalar();
+    	if ($result > 0) {
+    		$sql = "UPDATE `counts` SET `script` = ".$db->quoteValue($val)." WHERE `name` = ".$db->quoteValue($name);
+    		$command = $db->createCommand($sql);
+    		$command->execute();
+    	} else {
+    		$this->insertCounts($name, $val);
+    	}
+    	
+    }
+    
+    public function insertCounts($name, $val) { 
+    	$db = Yii::app()->db;
+    	$sql = "INSERT INTO `counts` SET `script` = ".$db->quoteValue($val).", `name` = ".$db->quoteValue($name);
+    	$command = $db->createCommand($sql);
+    	$command->execute();
+    }
     
 }
 

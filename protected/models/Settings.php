@@ -36,6 +36,8 @@ class Settings {
         $result = $command->queryRow();
         return $result;
     }
+    
+    
 }
 
 ?>

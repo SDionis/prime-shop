@@ -472,14 +472,17 @@ class product {
         }
         
         $str_query = "SELECT p.*, 
-                (SELECT `picture` FROM `pictures` pic2 WHERE pic2.id_product = p.id ORDER BY pic2.id ASC LIMIT 1) main_picture 
+                (SELECT `picture` FROM `pictures` pic2 WHERE pic2.id_product = p.id ORDER BY pic2.id ASC LIMIT 1) main_picture, 
+        		sh.offer_id 
                 FROM `products` p 
                 INNER JOIN `categories` c ON c.id_category = p.id_category AND c.id_shop = p.id_shop 
+        		INNER JOIN `shops` sh ON sh.id = p.id_shop 
                 WHERE c.`id` IN (".implode(',', $cat_ids).")";
 
         $start_position = ($current_page-1)*$perpage;
 		$sql_counter = "SELECT COUNT(*) `count_num` FROM `products` p 
-                INNER JOIN `categories` c ON c.id_category = p.id_category AND c.id_shop = p.id_shop  
+                INNER JOIN `categories` c ON c.id_category = p.id_category AND c.id_shop = p.id_shop   
+				INNER JOIN `shops` sh ON sh.id = p.id_shop 
                 WHERE c.`id` IN (".implode(',', $cat_ids).")";
 	    $command = $db->createCommand($sql_counter);
         $total_amount = $command->queryScalar();

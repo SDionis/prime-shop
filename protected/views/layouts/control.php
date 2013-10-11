@@ -62,8 +62,9 @@ body {
 	    </li>
     	<li><a href="<?=$this->index_point?>control/UploadXML">Загрузить XML</a></li>
     	<li><a href="<?=$this->index_point?>control/AlternativeCategories">Альтернативные категории</a></li>
-        <li><a href="<?=$this->index_point?>control/DownloadAllImages">Скачать все картинки</a></li>
+        <!--<li><a href="<?=$this->index_point?>control/DownloadAllImages">Скачать все картинки</a></li>-->
         <li><a href="<?=$this->index_point?>control/Settings">Настройки</a></li>
+        <li><a href="<?=$this->index_point?>control/Counts">Счетчики</a></li>
     </ul>
 	<a style="position:absolute; right:1%; top:1%;" href="<?=$this->index_point?>control/AdminLogout">Выход</a>
 <?}?>

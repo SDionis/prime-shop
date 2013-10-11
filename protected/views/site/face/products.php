@@ -68,7 +68,8 @@
     						<span><!--<span class="strike-through">$177.00</span>--><?=$row['price']?> <?=$rus_names_currencies[$row['id_currency']]?></span>
     					</div>
     					<div class="thumbButtons">
-							<a class="btn btn-primary btn-small btn-block" href="<?=$this->index_point.$row['translit']?>">Купить</a>
+							<a target="_blank" class="btn btn-primary btn-small btn-block" href="http://primeadv.go2cloud.org/aff_c?offer_id=<?=$row['offer_id']?>&aff_id=<?=$aff_id['setting_value']?>&url=<?=$row['url']?>">Купить</a>
+							
 						</div>
     					
     				</div>
@@ -78,7 +79,7 @@
 	</div><!--end row-->
     <?if (count($pager['data']) > 0 && $pager['total_pages'] > 1) {?>
 	<div class="pagination pagination-right">
-		<span class="pull-left">Showing <?=$pager['current_page']?> of <?=$pager['total_pages']?> pages:</span>
+		<span class="pull-left">Показано <?=$pager['current_page']?> из <?=$pager['total_pages']?> страниц:</span>
 		<ul>
             <?
             if ($pager['total_pages'] <= 10) {
@@ -89,7 +90,7 @@
                 $prev = $pager['current_page'] - 1;
             }
             ?>
-            <li><a class="invarseColor" href="<?=$this->index_point.$_GET['id'].'/?page='.$prev?>">Prev</a></li>
+            <li><a class="invarseColor" href="<?=$this->index_point.$_GET['id'].'/?page='.$prev?>">Пред.</a></li>
             <?
             for ($i=1; $i<=$pager['total_pages']; $i++) {
                 if ($i == $pager['current_page']) {
@@ -106,7 +107,7 @@
                 $next = $pager['current_page'] + 1;
             }
             ?>
-            <li><a class="invarseColor" href="<?=$this->index_point.$_GET['id'].'/?page='.$next?>">Next</a></li>
+            <li><a class="invarseColor" href="<?=$this->index_point.$_GET['id'].'/?page='.$next?>">След.</a></li>
 			<?
             } else {
                 if ($pager['current_page'] <= 1) {
@@ -115,7 +116,7 @@
                     $prev = $pager['current_page'] - 1;
                 }
                 ?>
-                <li><a class="invarseColor" href="<?=$this->index_point.$_GET['id'].'/?page='.$prev?>">Prev</a></li>
+                <li><a class="invarseColor" href="<?=$this->index_point.$_GET['id'].'/?page='.$prev?>">Пред.</a></li>
                 <?
                 for ($i=1; $i<=$pager['total_pages']; $i++) {
                     if ($i == $pager['current_page']) {
@@ -138,7 +139,7 @@
                     $next = $pager['current_page'] + 1;
                 }
                 ?>
-                <li><a class="invarseColor" href="<?=$this->index_point.$_GET['id'].'/?page='.$next?>">Next</a></li>
+                <li><a class="invarseColor" href="<?=$this->index_point.$_GET['id'].'/?page='.$next?>">След.</a></li>
     			<?
                 }
             ?>

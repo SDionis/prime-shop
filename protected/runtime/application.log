@@ -2252,3 +2252,1335 @@ Stack trace:
 #12 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
 #13 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
 REQUEST_URI=/partener_shop/testdrive/BULOVA_ACCUTRON_63A000
+2013/10/07 18:14:11 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/ControlController.php:427)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#2 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/control/AlternativeCategories
+2013/10/07 18:14:13 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/ControlController.php:427)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#2 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/control/AlternativeCategories
+2013/10/07 18:14:20 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/ControlController.php:427)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#2 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/control/AlternativeCategories
+2013/10/10 11:44:21 [error] [php] include(shop.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/logika/public_html/partener_shop/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/testdrive/protected/controllers/ControlController.php(574): spl_autoload_call()
+#1 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionCounts()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/control/Counts
+2013/10/10 11:44:38 [error] [php] include(shop.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/logika/public_html/partener_shop/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/testdrive/protected/controllers/ControlController.php(574): spl_autoload_call()
+#1 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionCounts()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/control/Counts
+2013/10/10 12:35:33 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'c ON sh.id = p.id_shop 
+                WHERE c.`id` IN (2,8,9,10,11,12,13,14,1' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) `count_num` FROM `products` p 
+                INNER JOIN `categories` c ON c.id_category = p.id_category AND c.id_shop = p.id_shop  
+				INNER JOIN `shops` sh c ON sh.id = p.id_shop 
+                WHERE c.`id` IN (2,8,9,10,11,12,13,14,15,16,195,410,411,412,413,500,501,523,524,525,526,17,18,19,20,21,22,23,24,187,414,432,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,189,190,415,416,417,44,45,46,47,48,49,50,51,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,223,262,263,395,396,397,398,399,400,401,402,403,404,405,406,407,490,521,522,278,556,536,547,557).
+2013/10/10 12:35:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'c ON sh.id = p.id_shop 
+                WHERE c.`id` IN (2,8,9,10,11,12,13,14,1' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Product.php(488): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(264): product->pager(1, 9, Array)
+#3 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#9 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category/jenschinam
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/Default_Category/mujchinam
+---
+2013/10/10 12:37:12 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'c ON sh.id = p.id_shop 
+                WHERE c.`id` IN (2,8,9,10,11,12,13,14,1' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) `count_num` FROM `products` p 
+                INNER JOIN `categories` c ON c.id_category = p.id_category AND c.id_shop = p.id_shop   
+				INNER JOIN `shops` sh c ON sh.id = p.id_shop 
+                WHERE c.`id` IN (2,8,9,10,11,12,13,14,15,16,195,410,411,412,413,500,501,523,524,525,526,17,18,19,20,21,22,23,24,187,414,432,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,189,190,415,416,417,44,45,46,47,48,49,50,51,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,223,262,263,395,396,397,398,399,400,401,402,403,404,405,406,407,490,521,522,278,556,536,547,557).
+2013/10/10 12:37:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'c ON sh.id = p.id_shop 
+                WHERE c.`id` IN (2,8,9,10,11,12,13,14,1' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Product.php(488): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(264): product->pager(1, 9, Array)
+#3 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#9 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category/jenschinam
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/Default_Category/mujchinam
+---
+2013/10/10 13:18:12 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:235)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/BC/Mango
+2013/10/10 13:18:15 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:235)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/BC/Mango
+2013/10/10 13:18:22 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:235)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/BC/Mango
+2013/10/10 13:18:55 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:235)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/Underwear_set_
+2013/10/10 17:37:17 [error] [php] Variable passed to each() is not an array or object (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:361)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/jenschinam
+2013/10/10 17:37:29 [error] [php] Variable passed to each() is not an array or object (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:361)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/jenschinam
+2013/10/10 17:41:22 [error] [php] Variable passed to each() is not an array or object (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:364)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/BC
+2013/10/10 17:41:26 [error] [php] Variable passed to each() is not an array or object (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:364)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+2013/10/10 17:41:30 [error] [php] Variable passed to each() is not an array or object (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:364)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+2013/10/10 17:55:00 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:266)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/BC
+2013/10/10 17:55:05 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:266)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/
+2013/10/10 18:02:30 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:266)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/BC/SauconyNew-balance
+2013/10/10 18:27:06 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 18:27:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(156): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(175): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(224): catalog->get_tree_from_array(Array)
+#4 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#9 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#10 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category/BC
+---
+2013/10/10 18:27:12 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 18:27:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(156): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(175): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(224): catalog->get_tree_from_array(Array)
+#4 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#9 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#10 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category/
+---
+2013/10/10 18:27:15 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 18:27:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(156): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(175): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(224): catalog->get_tree_from_array(Array)
+#4 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#9 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#10 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+---
+2013/10/10 18:27:21 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 18:27:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(156): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(175): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(224): catalog->get_tree_from_array(Array)
+#4 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#9 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#10 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category/jenschinam
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 18:27:37 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 18:27:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(156): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(175): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(224): catalog->get_tree_from_array(Array)
+#4 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#9 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#10 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category/jenschinam
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 18:33:24 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 18:33:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(156): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(175): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(224): catalog->get_tree_from_array(Array)
+#4 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#9 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#10 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category/jenschinam
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 18:35:14 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 18:35:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(156): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(175): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(224): catalog->get_tree_from_array(Array)
+#4 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#9 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#10 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category/BC
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/Default_Category/jenschinam
+---
+2013/10/10 18:35:17 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 18:35:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(156): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(175): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(224): catalog->get_tree_from_array(Array)
+#4 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#9 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#10 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category/
+---
+2013/10/10 18:35:20 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 18:35:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(156): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(175): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(224): catalog->get_tree_from_array(Array)
+#4 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#9 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#10 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+---
+2013/10/10 18:38:14 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 18:38:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(156): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(176): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(224): catalog->get_tree_from_array(Array)
+#4 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#9 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#10 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+---
+2013/10/10 18:40:12 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:271)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/BC
+2013/10/10 19:24:32 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id = .
+2013/10/10 19:24:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(92): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(223): catalog->tree(Array, '1', '1')
+#3 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#9 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category/jenschinam
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/mashinka_na_radioupravlenii_Ferrari_krasnaya_krasnyiy_tsvet
+---
+2013/10/10 19:24:41 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id = .
+2013/10/10 19:24:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(92): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(223): catalog->tree(Array, '1', '1')
+#3 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#9 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+---
+2013/10/10 19:25:01 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:25:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(175): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(97): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(100): catalog->tree(Array, '11', '1')
+#4 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(100): catalog->tree(Array, '3', '1')
+#5 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(100): catalog->tree(Array, '2', '1')
+#6 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(223): catalog->tree(Array, '1', '1')
+#7 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#8 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#12 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#13 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+---
+2013/10/10 19:26:19 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:26:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(175): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(97): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(100): catalog->tree(Array, '11', '1')
+#4 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(100): catalog->tree(Array, '3', '1')
+#5 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(100): catalog->tree(Array, '2', '1')
+#6 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(223): catalog->tree(Array, '1', '1')
+#7 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#8 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatsOrProd')
+#12 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#13 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+---
+2013/10/10 19:45:49 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/dlya_doma/polotentsa/dlya_vannoy
+2013/10/10 19:45:49 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+2013/10/10 19:45:50 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+2013/10/10 19:45:50 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+2013/10/10 19:45:50 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+2013/10/10 19:47:54 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/dlya_doma/polotentsa/dlya_vannoy
+2013/10/10 19:47:54 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+2013/10/10 19:47:55 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+2013/10/10 19:47:55 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+2013/10/10 19:47:55 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+2013/10/10 19:48:47 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/dlya_doma/polotentsa/dlya_vannoy
+2013/10/10 19:48:47 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+2013/10/10 19:48:48 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+2013/10/10 19:48:48 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+2013/10/10 19:48:49 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+2013/10/10 19:48:58 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+2013/10/10 19:48:59 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+2013/10/10 19:48:59 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+2013/10/10 19:48:59 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+2013/10/10 19:49:00 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+2013/10/10 19:50:18 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+2013/10/10 19:50:19 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+2013/10/10 19:50:19 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+2013/10/10 19:50:20 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+2013/10/10 19:50:20 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+2013/10/10 19:56:55 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+2013/10/10 19:56:56 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+2013/10/10 19:56:56 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+2013/10/10 19:56:57 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+2013/10/10 19:56:57 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:73)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+2013/10/10 19:57:06 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+---
+2013/10/10 19:57:06 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/Default_Category
+---
+2013/10/10 19:57:07 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/Default_Category
+---
+2013/10/10 19:57:07 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/Default_Category
+---
+2013/10/10 19:57:07 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/Default_Category
+---
+2013/10/10 19:57:13 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/
+---
+2013/10/10 19:57:14 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 19:57:14 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 19:57:15 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 19:57:15 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 19:57:18 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 19:57:27 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/
+---
+2013/10/10 19:57:28 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 19:57:28 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 19:57:29 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 19:57:30 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 19:57:34 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3. Выполнявшийся SQL-запрос: SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id IN ().
+2013/10/10 19:57:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(182): CDbCommand->queryScalar()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(589): catalog->get_count_prods_by_ids_cats(Array)
+#3 /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php(597): catalog->menu2('2', '1', 1)
+#4 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(57): catalog->menu2(1, '1', 0)
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/logika/public_html/partener_shop/testdrive/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/partener_shop/testdrive/
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/10 19:58:05 [error] [php] Cannot modify header information - headers already sent by (output started at /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:596) (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:161)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category
+2013/10/10 19:58:06 [error] [php] Cannot modify header information - headers already sent by (output started at /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:596) (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:161)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+2013/10/10 19:58:07 [error] [php] Cannot modify header information - headers already sent by (output started at /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:596) (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:161)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+2013/10/10 19:58:07 [error] [php] Cannot modify header information - headers already sent by (output started at /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:596) (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:161)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+2013/10/10 19:58:07 [error] [php] Cannot modify header information - headers already sent by (output started at /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:596) (/home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php:161)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/logika/public_html/partener_shop/testdrive/index.php(13): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+2013/10/10 20:19:02 [error] [php] Missing argument 2 for catalog::get_count_prods_by_ids_cats(), called in /home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php on line 118 and defined (/home/logika/public_html/partener_shop/testdrive/protected/models/Catalog.php:196)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): FaceController->actionShowCatsOrProd()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): FaceController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): FaceController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): FaceController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(15): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/Default_Category/mujchinam
+2013/10/11 10:53:51 [error] [php] simplexml_load_file() [<a href='function.simplexml-load-file'>function.simplexml-load-file</a>]: /home/logika/public_html/partener_shop/testdrive/ymlftp/:1: parser error : Document is empty (/home/logika/public_html/partener_shop/testdrive/protected/models/YMLParser.php:4)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionUploadXML()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/testdrive/control/UploadXML
+2013/10/11 11:00:16 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/ControlController.php(120): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionUploadXML()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('UploadXML')
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('control/UploadX...')
+#9 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/partener_shop/testdrive/control/UploadXML
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/control/UploadXML
+---
+2013/10/11 11:00:16 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/control/UploadXML
+---
+2013/10/11 11:00:16 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/control/UploadXML
+---
+2013/10/11 11:00:16 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/control/UploadXML
+---
+2013/10/11 11:00:16 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/control/UploadXML
+---
+2013/10/11 11:00:19 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/ControlController.php(161): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionShowCatalog()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('ShowCatalog')
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('control/ShowCat...')
+#9 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/partener_shop/testdrive/control/ShowCatalog
+---
+2013/10/11 11:00:20 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/control/ShowCatalog
+---
+2013/10/11 11:00:20 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/control/ShowCatalog
+---
+2013/10/11 11:00:20 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/control/ShowCatalog
+---
+2013/10/11 11:00:20 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/control/ShowCatalog
+---
+2013/10/11 11:00:23 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/
+---
+2013/10/11 11:00:23 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/css/screen.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/11 11:00:23 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/css/print.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/11 11:00:23 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/css/form.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---
+2013/10/11 11:00:23 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist. Выполнявшийся SQL-запрос: SELECT * FROM `settings` WHERE `setting_name` = 'aff_id'.
+2013/10/11 11:00:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'logika_partener_shop.settings' doesn't exist' in /home/logika/public_html/partener_shop/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/logika/public_html/partener_shop/testdrive/protected/models/Settings.php(36): CDbCommand->queryRow()
+#2 /home/logika/public_html/partener_shop/testdrive/protected/controllers/FaceController.php(37): Settings->get_setting_by_setting_name('aff_id')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/testdrive/index.php(16): CApplication->run()
+#8 {main}
+REQUEST_URI=/partener_shop/testdrive/css/main.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/testdrive/
+---

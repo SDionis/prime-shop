@@ -6,6 +6,7 @@ class FaceController extends Controller {
     public $index_point;
     public $title;
     public $index_point_without_slash;
+    public $counts;
     public function __construct(){
         $index_point = explode('index.php', $_SERVER['SCRIPT_NAME'], 2);
         $this->index_point = $index_point[0];
@@ -82,7 +83,8 @@ class FaceController extends Controller {
         }
         
         $this->out_menu = $out_menu;
-        
+        $counts = $shop->getCounts();
+        $this->counts = $counts;
     }
     public function actionIndex() {
     	    	
@@ -203,7 +205,7 @@ class FaceController extends Controller {
         $rus_names_currencies =  $product->get_rus_names_currencies();
         
         if ($is_category == 1) {
-            
+        	$aff_id = $settings->get_setting_by_setting_name('aff_id');
 	        $shops_ids = $shop->get_shops_ids();
 	        $shops_all_info = $shop->get_shops_all_info();
             
@@ -218,10 +220,12 @@ class FaceController extends Controller {
 	        foreach ($shops_ids as $id) {
 	            $catalog_for_tree = $catalog->get_catalog_for_tree_with_cat_alt($id);				
                 $min_parent = $catalog->select_min_parent($id);
-	            $tree = $catalog->tree($catalog_for_tree, $min_parent, $id);
+	            $tree = $catalog->tree_for_face($catalog_for_tree, $min_parent, $id);
 	            $out[] = $catalog->get_tree_from_array($tree);
 	        }
-            
+	        //echo '<pre>';
+	        //print_r($out[0]);
+	        //echo '</pre>';
 	        $arr_merge = array();
 	        foreach ($out as $val) {
 	            if (empty($arr_merge)) {
@@ -230,7 +234,10 @@ class FaceController extends Controller {
 	                $arr_merge = array_merge_recursive($arr_merge, $val);
 	            }
 	        }
-	        
+	        //echo '<pre>';
+	        //print_r($catalog->get_all_childs2(823, 2));
+	        //echo '</pre>';
+	       
 	        //$cats_by_translit = $catalog->get_categories_by_translit($translit);
 	        //$all_parents = $catalog->get_all_parents($cats_by_translit[0]['id_category_parent'], $cats_by_translit[0]['id_shop']);
             //echo '<pre>';
@@ -248,8 +255,9 @@ class FaceController extends Controller {
             unset($_SESSION['cat_name']);
 	        $all_childs = array();
 	        $category_ids = array();
+	        
 	        foreach ($cats_by_translit as $cat_by_translit) {
-	        	$all_childs = $catalog->get_all_childs($cat_by_translit['id_category'], $cat_by_translit['id_shop']);
+	        	$all_childs = array_merge($catalog->get_all_childs($cat_by_translit['id_category'], $cat_by_translit['id_shop']), $all_childs);
 	        	$category_ids[] = $cat_by_translit['id'];
 	        }
 	        foreach ($all_childs as $row) {
@@ -263,6 +271,7 @@ class FaceController extends Controller {
             
             
             $this->render('site/face/products', array(
+            'aff_id' => $aff_id,
             'merged_cats' => $merged_cats, 
             'product_obj' => $product,
             //'all_parents' => $all_parents,

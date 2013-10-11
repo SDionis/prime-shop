@@ -78,22 +78,68 @@ class catalog {
     }
     
     public function tree($arr, $parent, $id_shop){
+    	$db = Yii::app()->db;
+    	$out=array();
+    	if (!isset($arr[$parent])) {
+    		return $out;
+    	}
+    	foreach ($arr[$parent] as $row) {
+    		
+    		$out_local = $this->tree($arr, $row['id_category'], $id_shop);
+    
+    		if ($out_local) {
+    			$row['childs'] = $out_local;
+    		}
+    		
+    		$out[] = $row;
+    		
+    	}
+    	return $out;
+    }
+    
+    public function tree_for_face($arr, $parent, $id_shop){
+    	$db = Yii::app()->db;
         $out=array();
         if (!isset($arr[$parent])) {
             return $out;
         }
         foreach ($arr[$parent] as $row) {
-            
-            $out_local = $this->tree($arr, $row['id_category'], $id_shop);
-            if ($out_local) {
-                $row['childs'] = $out_local;
+        	
+        	$sql = "SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id = ".$row['id'];
+        	$command = $db->createCommand($sql);
+        	$count = $command->queryScalar();
+        	
+        	$_SESSION['out'] = array();
+        	$all_childs = $this->get_all_childs2($row['id_category'], $row['id_shop']);
+        	unset($_SESSION['out']);
+        	if (!empty($all_childs)) {
+        		$count_all_childs = $this->get_count_prods_by_ids_cats($all_childs, $id_shop);
+        	} else {
+        		$count_all_childs = 0;
+        	}
+        	
+        	//if ($row['translit'] == 'Black_Friday') {
+        		//print_r($all_childs);
+        	//}
+        	if ($count_all_childs > 0) {
+        		$out_local = $this->tree_for_face($arr, $row['id_category'], $id_shop);
+        		
+        		if ($out_local) {
+        			$row['childs'] = $out_local;
+        		}
+        	}
+        	
+            if ($count > 0 || $count_all_childs > 0) {
+            	$out[] = $row;
             }
-            $out[] = $row;
+            
             
         }
         return $out;
     }
-    
+     
     public function tree2($arr, $parent, $id_shop){
         $out=array();
         if (!isset($arr[$parent])) {
@@ -129,6 +175,8 @@ class catalog {
         return $res;
     }
     
+    
+    
     public function show_tree_from_array($arr){
         echo '<ul>';
         foreach($arr as $val){
@@ -145,20 +193,53 @@ class catalog {
         echo '</ul>';
     }
     
+    public function get_count_prods_by_ids_cats($arr, $id_shop){
+    	$db = Yii::app()->db;
+    	$sql = "SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category AND c.id_shop = p.id_shop AND c.id_shop = ".$id_shop."  
+                		WHERE c.id IN (".implode(',', $arr).")";
+    	$command = $db->createCommand($sql);
+    	$count = $command->queryScalar();
+    	return $count;
+    }
+    
     public function get_tree_from_array($arr){
-        
+    	$db = Yii::app()->db;
+    	
         $out = array();
         foreach($arr as $val){
             //$val_ids = array();
             //$val_ids[] = $val['id'];
+        	//$sql = "SELECT COUNT(*) FROM `products` p 
+                		//INNER JOIN `categories` c ON c.id_category = p.id_category 
+                		//WHERE c.id = ".$val['id'];
+        	//$command = $db->createCommand($sql);
+        	//$count = $command->queryScalar();
+        	
             if (isset($val['childs'])) {
-                $out_local = $this->get_tree_from_array($val['childs']);
+            	//$_SESSION['out'] = array();
+            	//$child_cats = $this->get_all_childs2($val['id_category'], $val['id_shop']);
+            	//unset($_SESSION['out']);
+            	//$count_all_childs = $this->get_count_prods_by_ids_cats($child_cats);
+            	
+            	//if ($count > 0 || $count_all_childs > 0) {
+            		$out[$val['cat_name']]['data'][$val['translit']][] = $val['id'];
+            	//}
+            	//if ($count_all_childs > 0) {
+            		$out_local = $this->get_tree_from_array($val['childs']);
+            		$out[$val['cat_name']]['childs'] = $out_local;
+            	//}
+                
                 //$out[$val['cat_name']] = array('data' => array($val['translit'] => $val['id']), 'childs' => $out_local);
-                $out[$val['cat_name']]['data'][$val['translit']][] = $val['id'];
-                $out[$val['cat_name']]['childs'] = $out_local;
+                
+                
             } else {
                 //$out[$val['cat_name']] = array('data' => array($val['translit'] => $val['id']));
-                $out[$val['cat_name']]['data'][$val['translit']][] = $val['id'];
+                //if (!empty($val['id']) && $count > 0) {
+                if (!empty($val['id'])) {
+                	$out[$val['cat_name']]['data'][$val['translit']][] = $val['id'];
+                }
+                
             }
             //$val_ids = array();
         }
@@ -296,7 +377,6 @@ class catalog {
         $command->execute();
     }
     public function insertIntoCategoriesAlternative($data) {
-        
         $db = Yii::app()->db;
         $sql = "INSERT INTO `categories_alternative` SET `name` = ".$db->quoteValue($data['name']).", 
                 `translit` = ".$db->quoteValue($data['translit'])."";
@@ -422,7 +502,7 @@ class catalog {
         $sql = "select c.id, c.id_shop, c.id_category, c.id_category_parent, COALESCE(ca.name, c.cat_name) cat_name, 
         		COALESCE(ca.translit, c.translit) translit from categories c
                     left join categories_alternative ca on c.id_cat_alternative = ca.id
-                    WHERE id_category_parent = ".(int) $id_cat." AND id_shop = ".(int) $id_shop;
+                    WHERE c.id_category_parent = ".(int) $id_cat." AND c.id_shop = ".(int) $id_shop;
         //echo $sql.'<br>';
         $command = $db->createCommand($sql);
         $data = $command->queryAll();
@@ -432,6 +512,22 @@ class catalog {
         	$this->get_all_childs($row['id_category'], $row['id_shop']);
         }
         return $out;    
+    }
+    
+    public function get_all_childs2($id_cat, $id_shop, $static_is_null = 0) {
+    	$db = Yii::app()->db;
+    	
+    	$sql = "select c.id, c.id_shop, c.id_category from categories c 
+                    WHERE c.id_category_parent = ".(int) $id_cat." AND c.id_shop = ".(int) $id_shop;
+    	//echo $sql.'<br>';
+    	$command = $db->createCommand($sql);
+    	$data = $command->queryAll();
+    
+    	foreach ($data as $row) {
+    		$_SESSION['out'][] = $row['id'];
+    		$this->get_all_childs2($row['id_category'], $row['id_shop']);
+    	}
+    	return $_SESSION['out'];
     }
     
     public function get_categories_by_translit($translit) {
@@ -491,7 +587,7 @@ class catalog {
     	}
     	$out = array();
     	$db = Yii::app()->db;
-    	$sql = "SELECT c.id_category, COALESCE(ca.name, c.cat_name) cat_name,
+    	$sql = "SELECT c.id, c.id_category, COALESCE(ca.name, c.cat_name) cat_name,
         		COALESCE(ca.translit, c.translit) translit FROM categories c
                     left join categories_alternative ca on c.id_cat_alternative = ca.id
                     WHERE id_category_parent = ".$parent_id." AND c.id_shop = ".$id_shop;
@@ -500,9 +596,28 @@ class catalog {
     	$data = $command->queryAll();
     	foreach ($data as $row) {
     		$level++;
-    		$out[$row['translit']]['name'] = $row['cat_name'];
-    		if ($level < 2) {
-    			$out[$row['translit']]['childs'] = $this->menu2($row['id_category'], $id_shop, $level);
+    		
+    		$sql = "SELECT COUNT(*) FROM `products` p
+                		INNER JOIN `categories` c ON c.id_category = p.id_category
+                		WHERE c.id = ".$row['id'];
+    		$command = $db->createCommand($sql);
+    		$count = $command->queryScalar();
+    		
+    		$_SESSION['out'] = array();
+    		$all_childs = $this->get_all_childs2($row['id_category'], $id_shop);
+    		unset($_SESSION['out']);
+    		if (!empty($all_childs)) {
+    			$count_all_childs = $this->get_count_prods_by_ids_cats($all_childs, $id_shop);
+    		} else {
+    			$count_all_childs = 0;
+    		}
+    		
+    		
+    		if ($count_all_childs > 0 || $count > 0) {
+    			$out[$row['translit']]['name'] = $row['cat_name'];
+	    		if ($level < 2) {
+	    			$out[$row['translit']]['childs'] = $this->menu2($row['id_category'], $id_shop, $level);
+	    		}
     		}
     		$level--;
     	}

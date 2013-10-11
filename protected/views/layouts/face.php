@@ -48,10 +48,16 @@
 
 			}
 		.navbar .nav li:hover ul {
-        	height:300px;
+        	max-height:300px;
         	overflow:auto;
         }
     </style>
+    
+    <script type="text/javascript">
+    
+	<?=!empty($this->counts['google_analitics'])?$this->counts['google_analitics']:''?>
+	
+    </script>
 </head>
 
 <body>
@@ -163,6 +169,11 @@
     <!-- custom function-->	<script>		var base_url = '<?=$this->index_point?>';	</script>
     <script src="<?=$this->index_point?>js/custom.js"></script>
     
+    <script type="text/javascript">
+    
+	<?=!empty($this->counts['yandex_metrika'])?$this->counts['yandex_metrika']:''?>
+	
+    </script>
 </body>
 
 </html>

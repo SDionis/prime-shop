@@ -293,5 +293,21 @@ INSERT INTO `currescies_translations` (`id`, `id_currency`, `rus_name`) VALUES
 (6, 'USD', 'USD'),
 (7, 'EUR', 'EUR');
 
+CREATE TABLE IF NOT EXISTS `counts` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `script` text CHARACTER SET utf8 NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=cp1251 AUTO_INCREMENT=3 ;
+
+--
+-- Дамп данных таблицы `counts`
+--
+
+INSERT INTO `counts` (`id`, `name`, `script`) VALUES
+(1, 'google_analitics', ''),
+(2, 'yandex_metrika', '');
+
+
 COMMIT;
 SET AUTOCOMMIT=1;

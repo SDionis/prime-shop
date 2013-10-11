@@ -2,6 +2,7 @@
     <form id="form_upload" class="form-horizontal" method="post" enctype="multipart/form-data">
    
     <div class="control-group upload_div">
+    	<div style="width:82%;margin:0 auto;">Максимальный объем загружаемого файла <?=ini_get('upload_max_filesize')?></div>
 	    <div class="controls">
 	    	<input type="file" name="uploadFile" id="inputFile" placeholder="файл YML" />
 	    </div>
