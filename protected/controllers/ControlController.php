@@ -502,7 +502,7 @@ class ControlController extends Controller
         $setting_names = array('shop_name', 'aff_id');
         if (!empty($_POST) && empty($_SERVER['HTTP_X_REQUESTED_WITH'])) {
             $settings->update_settings($_POST);
-            header('Location: '.$_SERVER['REQUEST_URI']);
+            header('Location: '.$_SERVER['REDIRECT_URL']);
         }
         
         $setting_info = $settings->get_settings($setting_names);
