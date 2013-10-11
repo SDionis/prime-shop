@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Prime-shop : prime-shop partener shop" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Prime-shop</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/primelead/prime-shop">View on GitHub</a>
+
+          <h1 id="project_title">Prime-shop</h1>
+          <h2 id="project_tagline">prime-shop partener shop</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/primelead/prime-shop/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/primelead/prime-shop/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B5-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0-prime-shop" class="anchor" href="#%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B5-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0-prime-shop"><span class="octicon octicon-link"></span></a>Инструкция по установке партнерского магазина prime-shop.</h1>
+
+<ol>
+<li>Скачать архив с <a href="https://github.com/primelead/prime-shop/">https://github.com/primelead/prime-shop/</a> (Справа есть кнопка для скачивания "Download Zip"). </li>
+<li>Распаковать содержимое архива и залить его на хостинг. Файл index.php должен быть в корне вебсервера (обычно папка public_html или www).</li>
+<li>Зайти на Ваш домен, который соответствует хостингу. </li>
+<li>Если кроме полей ввода данных для соединения с базой данных отображают предупреждения о том, что какие либо файлы либо каталоги не имеют права на запись, это необходимо устранить, добавив права на запись файлам или каталогам, которые указаны в предупреждении. Отображаются полные пути. </li>
+<li>Ввести данные для соединения с базой данных. Часто в роли сервера базы данных выступает "localhost" Если данные не верны - будут выдаваться предупреждения.</li>
+<li>Если данные верны - отобразится "Успешно установлено", и 2 ссылки - в административную панель и собственно на сайт.</li>
+<li>Для начала Вам надо войти в административную панель, ибо без обязательных данных сайт работать не будет. Логин для входа: "admin", пароль: "12345678" . </li>
+<li>Будут отображаться предупреждения о введении обязательных данных, таких как "ID партнера из hasoffers" а также offer ID, указываемый при импорте YML. </li>
+<li>После введения "ID партнера из hasoffers" жмем "На главную", выбираем метод импорта xml.
+YML можно импортировать 2-мя способами - загрузить файл через HTTP - будет указан максимальный допустимый размер файла, либо загрузить файл YML  по фтп или SSH в каталог "ymlftp".
+Можно импортировать несколько магазинов, в этом случае, если у магазинов есть категории с одинаковыми названиями на одном уровне вложенности и в одной и той же родительской категории, категории оъединятся в одну, а товары этих категорий будут слиты (отображаться будут товары из всех объединенных категорий). Это будет отображено на сайте. В админке все отображается как есть.</li>
+<li>После импорта YML сайт становится рабочим. Из админка, нажмя на "главную", можно редактировать и удалять товары, категории, а также весь магазин. </li>
+<li>В меню "Альтернативные категории" есть возможность связать категории в одну, товары этих категорий будут слиты.</li>
+<li>В меню "счетчики" можно прописать код для google analytics и Яндекс метрики.</li>
+</ol>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Prime-shop maintained by <a href="https://github.com/primelead">primelead</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
