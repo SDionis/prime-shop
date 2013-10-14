@@ -16,12 +16,12 @@ foreach ($categoriesAlternative as $key => $val) {
 <tr class="tr_data">
     <td class="td_name"><input type="text" name="cat_name[<?=$i?>]" value="<?=$val['cat_alt_name']?>" /></td>
     <td class="td_name">
-        <select multiple="multiple" size="4" name="cat_link[<?=$i?>][]">
+        <select multiple="multiple" size="8" name="cat_link[<?=$i?>][]">
             <?
             
             foreach($get_array_from_tree_for_option as $key2 => $val2) {
             ?>
-                <option style="color:red;" value="<?=$key2?>"><?=$key2?></option>
+                <option disabled="disabled" style="color:red;" value="<?=$key2?>"><?=$key2?></option>
             <?
                 foreach($val2 as $key3 => $val3) {
                     if (in_array($key3, $arr_links)) {
@@ -71,7 +71,7 @@ foreach ($categoriesAlternative as $key => $val) {
                     var tr_add = '<tr class="tr_data" style="background:#DCDCDC;">';
                     tr_add += '<td class="td_name"><input type="text" name="cat_name['+i+']" value="" /></td>';
                     tr_add += '<td class="td_name">';
-                    tr_add += '<select multiple="multiple" size="4" name="cat_link['+i+'][]">';
+                    tr_add += '<select multiple="multiple" size="8" name="cat_link['+i+'][]">';
                     tr_add += data_return;
                     tr_add += '</select>';
                     tr_add += '</td>';

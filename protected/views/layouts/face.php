@@ -1,3 +1,10 @@
+<?php
+header('Content-Type: text/html;charset=UTF-8');
+Header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); //Дата в прошлом
+Header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+Header("Pragma: no-cache"); // HTTP/1.1
+Header("Last-Modified: ".gmdate("D, d M Y H:i:s")."GMT");
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -9,8 +16,10 @@
   ================================================== -->
 	<meta charset="utf-8">
 	<title><?=$this->title?></title>
-	<meta name="description" content="">
+	<meta name="description" content="<?=$this->description?>">
 	<meta name="author" content="">
+	<meta name="keywords" content="<?=$this->keywords?>">
+	
 	<!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

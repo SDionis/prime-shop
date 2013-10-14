@@ -505,7 +505,19 @@ class ControlController extends Controller
     
     public function actionSettings(){
         $settings = new Settings();
-        $setting_names = array('shop_name', 'aff_id');
+        $setting_names = array(
+        	'shop_name' => 'Название Вашего Магазина', 
+        	'aff_id' => 'ID партнера из hasoffers',
+        	'title_main' => 'Title для главной страницы',
+        	'descr_main' => 'Description для главной страницы',
+        	'keywords_main' => 'Keywords для главной страницы',
+        	'title_cat' => 'Title для страницы категорий',
+        	'descr_cat' => 'Description для страницы категорий',
+        	'keywords_cat' => 'Keywords для страницы категорий',
+        	'title_prod' => 'Title для страницы товара',
+        	'descr_prod' => 'Description для страницы товара',
+        	'keywords_prod' => 'Keywords для страницы товара',
+        );
         if (!empty($_POST) && empty($_SERVER['HTTP_X_REQUESTED_WITH'])) {
             $settings->update_settings($_POST);
             header('Location: '.$_SERVER['REDIRECT_URL']);

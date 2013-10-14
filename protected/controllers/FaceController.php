@@ -5,6 +5,8 @@ class FaceController extends Controller {
     public $out_menu;
     public $index_point;
     public $title;
+    public $description;
+    public $keywords;
     public $index_point_without_slash;
     public $counts;
     public function __construct(){
@@ -105,7 +107,15 @@ class FaceController extends Controller {
 
         $settings = new Settings();
         $my_shop_name = $settings->get_setting_by_setting_name('shop_name');
-        $this->title = 'Интернет-магазин '.$my_shop_name['setting_value'];
+        $alt_title = 'Интернет-магазин '.$my_shop_name['setting_value'];
+        
+        $meta_tags = $settings->get_settings_info_by_setting_names(array('title_main', 'descr_main', 'keywords_main'));
+        
+        $this->title = !empty($meta_tags['title_main'])?str_replace('{%магазин%}', $my_shop_name['setting_value'], $meta_tags['title_main']):$alt_title;
+        
+        $this->description = str_replace('{%магазин%}', $my_shop_name['setting_value'], $meta_tags['descr_main']);
+        $this->keywords = str_replace('{%магазин%}', $my_shop_name['setting_value'], $meta_tags['keywords_main']);
+        
     	$product = new Product();
     	$product_ids = $product->get_product_ids();
     	if (!empty($product_ids)) {
@@ -266,7 +276,13 @@ class FaceController extends Controller {
 	        $cats_by_translit = $catalog->get_cat_info_by_ids($_SESSION['category_ids']);
             unset($_SESSION['category_ids']);
             $cat_name = $_SESSION['cat_name'];
-            $this->title = $cat_name.' - купить по лучшей цене в магазине '.$my_shop_name['setting_value'];
+            
+            $meta_tags = $settings->get_settings_info_by_setting_names(array('title_cat', 'descr_cat', 'keywords_cat'));
+            $alt_title =  $cat_name.' - купить по лучшей цене в магазине '.$my_shop_name['setting_value'];
+            $this->title = !empty($meta_tags['title_cat'])?$meta_tags['title_cat']:$alt_title;
+            $this->title = str_replace('{%категория%}', $cat_name, $this->title );
+            $this->description = str_replace('{%категория%}', $cat_name, $meta_tags['descr_cat']);
+            $this->keywords = str_replace('{%категория%}', $cat_name, $meta_tags['keywords_cat']);
             unset($_SESSION['cat_name']);
 	        $all_childs = array();
 	        $category_ids = array();
@@ -303,7 +319,13 @@ class FaceController extends Controller {
             $cat_info = $product->get_cat_info_by_prod_info($prod_info['id_category'], $prod_info['id_shop']);
             $prod_name = $product->get_prod_name($prod_info);
             
-            $this->title = $cat_info['cat_name'].' '.$prod_name.' купить по лучшей цене в магазине '.$my_shop_name['setting_value'];
+            $meta_tags = $settings->get_settings_info_by_setting_names(array('title_prod', 'descr_prod', 'keywords_prod'));
+            $alt_title =  $cat_info['cat_name'].' '.$prod_name.' купить по лучшей цене в магазине '.$my_shop_name['setting_value'];
+            $this->title = !empty($meta_tags['title_prod'])?$meta_tags['title_prod']:$alt_title;
+            $this->title = str_replace(array('{%категория%}', '{%товар%}', '{%магазин%}'), array($cat_info['cat_name'], $prod_name, $my_shop_name['setting_value']), $this->title );
+            $this->description = str_replace(array('{%категория%}', '{%товар%}', '{%магазин%}'), array($cat_info['cat_name'], $prod_name, $my_shop_name['setting_value']), $meta_tags['descr_prod']);
+            $this->keywords = str_replace(array('{%категория%}', '{%товар%}', '{%магазин%}'), array($cat_info['cat_name'], $prod_name, $my_shop_name['setting_value']), $meta_tags['keywords_prod']);
+            
             $settings =new Settings();
             $aff_id = $settings->get_setting_by_setting_name('aff_id');
             $shop_info = $shop->get_shop_by_id($prod_info['id_shop']);
@@ -317,7 +339,9 @@ class FaceController extends Controller {
             	'shop_info' => $shop_info,
             ));
         } else {
-        	echo 'not found';
+        	header("Status: 404 Not Found");
+        	echo 'not found<br />';
+        	echo '<a href="'.Yii::app()->request->baseUrl.'">На главную</a>';
         }
         
     }
