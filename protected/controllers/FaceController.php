@@ -340,7 +340,7 @@ class FaceController extends Controller {
             ));
         } else {
         	header("Status: 404 Not Found");
-        	echo 'not found<br />';
+        	echo 'Not found <br />';
         	echo '<a href="'.Yii::app()->request->baseUrl.'">На главную</a>';
         }
         
