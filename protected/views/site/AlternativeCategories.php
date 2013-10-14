@@ -6,8 +6,10 @@
     <td class="td_name">Привязка к категориям</td>
 </tr>
 <?
+
 $i=0;
 //echo '<pre>';print_r($categoriesAlternative);echo '</pre>';
+//echo '<pre>';print_r($_POST);echo '</pre>';
 foreach ($categoriesAlternative as $key => $val) {
     $arr_links = array_keys($val['links']); 
 ?>

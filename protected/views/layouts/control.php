@@ -65,6 +65,7 @@ body {
         <!--<li><a href="<?=$this->index_point?>control/DownloadAllImages">Скачать все картинки</a></li>-->
         <li><a href="<?=$this->index_point?>control/Settings">Настройки</a></li>
         <li><a href="<?=$this->index_point?>control/Counts">Счетчики</a></li>
+        <li><a href="<?=$this->index_point?>control/Return_to_install_state">Удаление магазина</a></li>
     </ul>
 	<a style="position:absolute; right:1%; top:1%;" href="<?=$this->index_point?>control/AdminLogout">Выход</a>
 <?}?>

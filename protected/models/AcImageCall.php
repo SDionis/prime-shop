@@ -2,9 +2,7 @@
 class AcImageCall {
 	
 	public function resize($filename, $width, $height, $id_shop='0', $id_product='0') {
-		if (1 == 2) {
-			return $filename;
-		}
+				
 		$index_point = Yii::app()->controller->index_point;
 		$img_name_full = $filename;
 		$filename_parts = explode('/', $img_name_full);
@@ -20,6 +18,9 @@ class AcImageCall {
 		if (!file_exists($intermediate_save_img_path)) {
             //echo $intermediate_save_img_path;
 			$this->grab_image($filename, $intermediate_save_img_path);
+		}
+		if (!file_exists($intermediate_save_img_path)) {
+			return false;
 		}
 		//return $intermediate_save_img_path;
 		/*require_once($_SERVER['DOCUMENT_ROOT'].$index_point.'libs/AcImage/AcImage.php');
@@ -65,19 +66,47 @@ class AcImageCall {
 	}
 	
 	public function grab_image($url,$saveto){
-		$ch = curl_init ($url);
-		curl_setopt($ch, CURLOPT_HEADER, 0);
+		
+		/*$ch = curl_init ($url);
+		curl_setopt($ch, CURLOPT_HEADER, 1);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_BINARYTRANSFER,1);
+		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+		curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
 		curl_setopt($ch , CURLOPT_USERAGENT , "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0");
 		$raw=curl_exec($ch);
+		$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+		curl_close ($ch);*/
+		
+		$ch = curl_init ($url);
+		curl_setopt($ch, CURLOPT_HEADER, 1);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_BINARYTRANSFER,1);
+		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+		curl_setopt($ch, CURLOPT_MAXREDIRS, 4);
+		curl_setopt($ch , CURLOPT_USERAGENT , "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0");
+		
+		$raw=curl_exec($ch);
+		
+		$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+		//$last_url = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
+		$headers = substr($raw, 0, curl_getinfo($ch, CURLINFO_HEADER_SIZE));
+		$data = substr($raw, curl_getinfo($ch, CURLINFO_HEADER_SIZE));
+		
 		curl_close ($ch);
-		if(file_exists($saveto)){
+		
+		if ($http_code == 200) {
+			if(file_exists($saveto)){
 			unlink($saveto);
+			}
+			$fp = fopen($saveto,'x');
+			fwrite($fp, $data);
+			fclose($fp);
 		}
-		$fp = fopen($saveto,'x');
-		fwrite($fp, $raw);
-		fclose($fp);
+		//echo '<pre>';
+		//print_r($data);
+		//echo '</pre>';
+		//exit;
 	}
 }
 

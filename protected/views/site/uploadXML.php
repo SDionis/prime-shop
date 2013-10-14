@@ -1,6 +1,7 @@
 <div class="" style="width: 400px; background-color: white; border: 1px solid #E3E3E3; border-radius: 4px 4px 4px 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);margin: 0 auto;padding:10px;">
     <form id="form_upload" class="form-horizontal" method="post" enctype="multipart/form-data">
-   
+    
+    <!--<input type="hidden" name="MAX_FILE_SIZE" value="30000" />-->
     <div class="control-group upload_div">
     	<div style="width:82%;margin:0 auto;">Максимальный объем загружаемого файла <?=ini_get('upload_max_filesize')?></div>
 	    <div class="controls">

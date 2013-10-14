@@ -69,22 +69,32 @@ class FaceController extends Controller {
         		$arr_merge = array_merge_recursive($arr_merge, $val);
         	}
         }
+        
         $out_menu = array();
         if (count($arr_merge) <= 2) {
         	foreach ($arr_merge as $key => $row) {
-        		
-        		foreach ($row['childs'] as $key2 => $row2) {
-        			$out_menu[$key2]['name'] = $row2['name'];
-        			$out_menu[$key2]['link'] = $this->index_point.$key.'/'.$key2;;
+        		if (!empty($row['childs'])) {
+        			foreach ($row['childs'] as $key2 => $row2) {
+        				$out_menu[$key2]['name'] = $row2['name'];
+        				$out_menu[$key2]['link'] = $this->index_point.$key.'/'.$key2;
+        			}
+        		} else {
+        			foreach ($arr_merge as $key => $row) {
+        				$out_menu[$key]['name'] = $row['name'];
+        				$out_menu[$key]['link'] = $this->index_point.$key;
+        			}
         		}
+        		
         	}
         } else {
         	foreach ($arr_merge as $key => $row) {
         		$out_menu[$key]['name'] = $row['name'];
-        			$out_menu[$key]['link'] = $this->index_point.$key;
+        		$out_menu[$key]['link'] = $this->index_point.$key;
         	}
         }
-        
+        //echo '<pre>';
+        //print_r($arr_merge);
+        //echo '</pre>';
         $this->out_menu = $out_menu;
         $counts = $shop->getCounts();
         $this->counts = $counts;
@@ -251,6 +261,8 @@ class FaceController extends Controller {
 	        $merged_cats = $catalog->display_merged_cats($arr_merge, $all_parents, $this->index_point, array(), $translit);
 	        
 	        //$cats_by_translit_arr = $catalog->get_categories_by_translit_array($all_parents);
+	        //print_r($_SESSION['category_ids']);
+	        
 	        $cats_by_translit = $catalog->get_cat_info_by_ids($_SESSION['category_ids']);
             unset($_SESSION['category_ids']);
             $cat_name = $_SESSION['cat_name'];

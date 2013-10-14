@@ -143,7 +143,13 @@ if (!empty($current_category_info)) {
             if (empty($row['picture'])) {
             	$resized_pic = $this->index_point.'img/212x192.jpg';
             } else {
+				//$resized_pic = $this->index_point.'img/212x192.jpg';
+				//echo $row['picture'].'<br>';
             	$resized_pic = $AcImageCall->resize($row['picture'], 100, 100, $row['id_shop'], $row['id_product']);
+            	if (empty($resized_pic)) {
+            		$resized_pic = $this->index_point.'img/212x192.jpg';
+            	}
+            	//exit;
             }
             //$resized_pic = $row['picture'];
             echo '<td><img src="'.$resized_pic.'" /></td>';

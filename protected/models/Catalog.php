@@ -413,10 +413,12 @@ class catalog {
             
             $translit_extend_str = implode('/', $translit_extend);
             //echo $translit_extend_str;
+            //echo $url_translit;
             if (!empty($url_translit) && $url_translit == $translit && ($_GET['id'] == $translit_extend_str.'/'.$translit || count(explode('/', $_GET['id'])) == 1)) {
                 $active = 'active';
                 $_SESSION['category_ids'] = $val['data'][$translit];
                 $_SESSION['cat_name'] = $key;
+                
             }
             //} else {
                ///$translit = '#';

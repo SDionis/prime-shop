@@ -41,6 +41,9 @@
 						$resized_pic = $this->index_point.'img/212x192.jpg';
 					} else {
 						$resized_pic = $AcImageCall->resize($row['main_picture'], 212, 192, $row['id_shop'], $row['id_product']);
+						if (empty($resized_pic)) {
+							$resized_pic = $this->index_point.'img/212x192.jpg';
+						}
 					}
 					//$resized_pic = $row['main_picture'];
 					
@@ -54,7 +57,7 @@
 					<div class="thumbSetting">
 						<div class="thumbTitle">
 							<h3>
-							<a href="<?=$row['translit']?>" class="invarseColor"><?=$prod_info?></a>
+							<a href="<?=$row['translit']?>" class="invarseColor"><?=$product_obj->cutString($prod_info, 45)?></a>
 							</h3>
 						</div>
 						
@@ -122,6 +125,9 @@
 						$resized_pic = $this->index_point.'img/212x192.jpg';
 					} else {
 						$resized_pic = $AcImageCall->resize($row['main_picture'], 212, 192, $row['id_shop'], $row['id_product']);
+						if (empty($resized_pic)) {
+							$resized_pic = $this->index_point.'img/212x192.jpg';
+						}
 					}
 					//$resized_pic = $row['main_picture'];
 					
@@ -134,7 +140,7 @@
 					<div class="thumbSetting">
 						<div class="thumbTitle">
 							<h3>
-							<a href="<?=$row['translit']?>" class="invarseColor"><?=$prod_info?></a>
+							<a href="<?=$row['translit']?>" class="invarseColor"><?=$product_obj->cutString($prod_info, 45)?></a>
 							</h3>
 						</div>
 						

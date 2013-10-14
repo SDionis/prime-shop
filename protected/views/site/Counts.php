@@ -3,7 +3,7 @@
 <table class="top_table">
 
 <tr class="tr_data">
-    <td class="td_name">Google Analitics</td>
+    <td class="td_name">Google Analytics</td>
     <td><textarea style="height:250px; width:840px;" type="text" name="google_analitics" ><?=htmlspecialchars($counts['google_analitics'], ENT_QUOTES)?></textarea></td>
 </tr>
 

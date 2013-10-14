@@ -231,7 +231,9 @@ class ControlController extends Controller
         foreach ($products_show as $key => $row) {
             $picture = $product->get_main_picture($row['id']);
             $products_show[$key]['picture'] = $picture;
+            //echo $picture.'<br>';
         }
+        
         //count($products_show);exit;
         $current_category_info = $catalog->get_cat_info_by_id_shop_and_id_cat((int) $_GET['id_cat'], (int) $_GET['id_shop']);
         //echo '<pre>';
@@ -382,19 +384,23 @@ class ControlController extends Controller
             $catalog->updateCatalogGeneral('all', array('id_cat_alternative' => 0));
             foreach ($insert_array as $key => $val) {
                 foreach ($val as $key2 => $val2) {
+                	
                     if ($key2 == 'cat_name') {
                         $translit = $yml_parser->translit(trim($val2));
                         $idCategoryAlternative = $catalog->insertIntoCategoriesAlternative(array('name' => $val2, 'translit' => $translit));
+                        
                     } else if ($key2 == 'ids') {
-                    	if (gettype($idCategoryAlternative) == 'integer') {
+                    	//if (gettype($idCategoryAlternative) == 'integer') {
+                    		//print_r($val2);
                     		$catalog->updateCatalogGeneral($val2, array('id_cat_alternative' => $idCategoryAlternative));
-                    	}
+                    	//}
                         
                     }
                     
                 }
             }
             header('Location: '.$_SERVER['REQUEST_URI']);
+            exit;
         }
         
         $shop = new Shop();
@@ -582,5 +588,31 @@ class ControlController extends Controller
     	$counts = $shop->getCounts();
     	$output_array = array('counts' => $counts);
     	$this->render('site/Counts', $output_array);
+    }
+    
+    public function actionReturn_to_install_state() {
+    	$error = array();
+    	if (!empty($_POST) && !empty($_POST['execute'])) {
+    		$filename = dirname($_SERVER['SCRIPT_FILENAME']).'/conf/conf.conf';
+    		if (!is_writable($filename)) {
+    			$error[] = 'Конфигурационный файл не имеет права на запись';
+    		}
+    		$str = 'is_install:1';
+    		if (!file_put_contents($filename, $str)) {
+    			$error = 'Не удалось добавить данные в конфигурационный файл';
+    		}
+    		if (empty($error)) {
+	    		$shop = new Shop();
+	    		$tables = $shop->show_tables();
+	    		foreach ($tables as $table) {
+	    			$shop->delete_table($table);
+	    		}
+	    		
+	    		header('Location: '.Yii::app()->request->baseUrl.'/install');
+	        	exit;
+    		}
+    	}
+    	$output_array = array('error' => $error);
+    	$this->render('site/return_to_install_state', $output_array);
     }
 }

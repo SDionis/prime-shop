@@ -90,6 +90,22 @@ class shop {
     	$command->execute();
     }
     
+    public function show_tables(){
+    	$db = Yii::app()->db;
+    	$sql = "SHOW TABLES;";
+    	$command = $db->createCommand($sql);
+    	$result = $command->queryColumn();
+    	return $result;
+    }
+    
+    public function delete_table($table){
+    	$db = Yii::app()->db;
+    	$sql = "DROP table ".$table.";";
+    	$command = $db->createCommand($sql);
+    	$command->execute();
+    	//echo $sql.'<br>';
+    }
+    
 }
 
 ?>

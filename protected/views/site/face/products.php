@@ -44,6 +44,9 @@
                     $resized_pic = $this->index_point.'img/212x192.jpg';
                 } else {
                 	$resized_pic = $AcImageCall->resize($row['main_picture'], 212, 192, $row['id_shop']);
+                	if (empty($resized_pic)) {
+                		$resized_pic = $this->index_point.'img/212x192.jpg';
+                	}
                 }
                 
                 //$row['main_picture'] = $this->index_point.'img/212x192.jpg';
@@ -55,7 +58,7 @@
     				<div class="thumbSetting">
     					<div class="thumbTitle">
     						<h3>
-    						<a href="<?=$this->index_point.$row['translit']?>" class="invarseColor"><?=$prod_info?></a>
+    						<a href="<?=$this->index_point.$row['translit']?>" class="invarseColor"><?=$product_obj->cutString($prod_info, 50)?></a>
     						</h3>
     					</div>
     					
