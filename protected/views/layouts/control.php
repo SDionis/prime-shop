@@ -13,6 +13,12 @@ Header("Last-Modified: ".gmdate("D, d M Y H:i:s")."GMT");
 
 <!--<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/admin/jquery.js"></script>-->
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/admin/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+jQuery.fn.live = function (types, data, fn) {
+    jQuery(this.context).on(types,this.selector,data,fn);
+    return this;
+};
+</script>
 
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/admin/bootstrap.js"></script>
 <?
@@ -46,7 +52,7 @@ body {
 .menu2{
     margin: 0 auto;
     min-width: 100px;
-    max-width: 60%;
+    max-width: 64%;
     text-align:center;
     margin-bottom: 10px;
 	margin-top: 10px;
@@ -65,6 +71,7 @@ body {
         <!--<li><a href="<?=$this->index_point?>control/DownloadAllImages">Скачать все картинки</a></li>-->
         <li><a href="<?=$this->index_point?>control/Settings">Настройки</a></li>
         <li><a href="<?=$this->index_point?>control/Counts">Счетчики</a></li>
+        <li><a href="<?=$this->index_point?>control/Update">Обновление</a></li>
         <li><a href="<?=$this->index_point?>control/Return_to_install_state">Удаление магазина</a></li>
     </ul>
 	<a style="position:absolute; right:1%; top:1%;" href="<?=$this->index_point?>control/AdminLogout">Выход</a>

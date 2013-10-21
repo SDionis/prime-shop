@@ -4,6 +4,7 @@ class ControlController extends Controller
 {
 	public $index_point;
 	public $with_hashing;
+	public $modified;
     public function __construct(){
 		$index_point = explode('index.php', $_SERVER['SCRIPT_NAME'], 2);
 		$this->index_point = $index_point[0];
@@ -626,5 +627,116 @@ class ControlController extends Controller
     	}
     	$output_array = array('error' => $error);
     	$this->render('site/return_to_install_state', $output_array);
+    }
+    
+    public function actionUpdate(){
+    	chdir($_SERVER['DOCUMENT_ROOT'].Yii::app()->request->baseUrl);
+    	$error = array();
+    	$is_updatable = 0;
+    	/*$remote_file = 'https://github.com/primelead/prime-shop/archive/master.zip';
+    	$ch = curl_init();
+    	curl_setopt($ch, CURLOPT_URL, $remote_file);
+    	curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/24.0");
+    	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    	curl_setopt($ch, CURLOPT_MAXREDIRS, 4);
+    	curl_setopt($ch, CURLOPT_BINARYTRANSFER, 1);
+    	curl_setopt($ch, CURLOPT_HEADER, 1);
+    	curl_setopt($ch, CURLOPT_NOBODY, 1);
+    	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    	
+    	$headers = curl_exec ($ch);
+    	curl_close ($ch);
+    	$headers_arr = explode("\n", $headers);
+    	$res = array();
+    	foreach($headers_arr as $val){
+    		$val2 = explode('Content-Length:', $val);
+    		if(count($val2) > 1){
+    			$res[] = trim($val2[1]);
+    		}
+    	}
+    	$bytes = $res[(count($res)-1)];
+    	*/
+    	$download_path = 'https://github.com/primelead/prime-shop-version/archive/master.zip';
+    	$archive_path = getcwd().'/archive_version.zip';
+    	$dir_source = getcwd().'/archive_version_update';
+    	if (is_writable(getcwd())){
+    		$ch = curl_init($download_path);
+    		curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/24.0");
+    		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    		curl_setopt($ch, CURLOPT_HEADER, 1);
+    		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    		curl_setopt($ch, CURLOPT_MAXREDIRS, 4);
+    		curl_setopt($ch, CURLOPT_BINARYTRANSFER, 1);
+    		$exec = curl_exec($ch);
+    	
+    		$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    		$headers = substr($exec, 0, curl_getinfo($ch, CURLINFO_HEADER_SIZE));
+    		$data = substr($exec, curl_getinfo($ch, CURLINFO_HEADER_SIZE));
+    	
+    		curl_close($ch);
+    		if ($http_code == 200) {
+    			$fp = fopen($archive_path,'w+b');
+    			fwrite($fp, $data);
+    			fclose($fp);
+    			
+    			if (class_exists('ZipArchive')) {
+    				$zip = new ZipArchive();
+    				$res = $zip->open('archive_version.zip');
+    				if ($res === TRUE) {
+    					$zip->extractTo('archive_version_update/');
+    					$zip->close();
+    				} else {
+    					$error[] = ('Не могу найти файл архива!');
+    				}
+    			} else {
+    				include_once 'libs/pclzip-2-8-2/pclzip.lib.php';
+    				$archive = new PclZip("archive_version.zip");
+    				if ($archive->extract(PCLZIP_OPT_PATH, "archive_version_update/") == 0) {
+    					$error[] = ("Error : ".$archive->errorInfo(true));
+    				}
+    			}
+    			if(empty($error)){
+    				$dirs_from = scandir($dir_source);
+    				$dir_from = $dir_source.'/'.$dirs_from[2];
+    				 
+    				$new_version = file_get_contents($dir_from.'/version.conf');
+    				$current_version = file_get_contents(getcwd().'/conf/version.conf');
+    				if($current_version != $new_version){
+    					$is_updatable = 1;
+    				} else {
+    					$is_updatable = 0;
+    				}
+    			}
+    		}
+    	
+    	} else {
+    		$error[] = ('Директория '.getcwd().' не имеет доступа на запись');
+    	}
+    	if($is_updatable == 0 || !empty($error)){
+    		$this->removeDirectory($dir_source);
+    		unlink($archive_path);
+    	}
+    	
+    	
+    	//echo '<pre>';
+    	//print_r($headers_arr);
+    	//echo '</pre>';
+    	
+    	$output_array = array('is_updatable' => $is_updatable, 'error' => $error);
+    	$this->render('site/Update', $output_array);
+    }
+    
+    public function removeDirectory($dir) {
+    	if ($objs = glob($dir."/{,.}*", GLOB_BRACE)) {
+    		foreach($objs as $obj) {
+    			$dir_tree = explode('/', $obj);
+    			$dir_last_in_tree = $dir_tree[(count($dir_tree)-1)];
+    			if ($dir_last_in_tree == '.' || $dir_last_in_tree == '..') {
+    				continue;
+    			}
+    			is_dir($obj) ? $this->removeDirectory($obj) : @unlink($obj);
+    		}
+    	}
+    	@rmdir($dir);
     }
 }
