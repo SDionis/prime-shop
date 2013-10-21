@@ -37,10 +37,8 @@ function finish_ajax() {
 	$('#layer_ajax').remove();
 }
 $(document).ready(function(){ 
-	//begin_ajax();
-	//finish_ajax();
+	
 	$('#update_button_after').live('click', function(){
-		
 		return false;
 	});
     $('#update_button').click(function(){
@@ -62,7 +60,7 @@ $(document).ready(function(){
                 if (data_return.length == 0) {
                 	tr_add += '<span style="font-size: 17px;padding: 6px 8px;" class="label label-success">Успешно обновлено</span>';
                 } else {
-                    tr_add += '<span style="font-size: 17px;padding: 6px 8px;" class="label label-success">'+data_return+'</span>';
+                    tr_add += '<span style="font-size: 17px;padding: 6px 8px;" class="label label-important">'+data_return+'</span>';
 				}
                 tr_add += '</td>';
                 tr_add += '</tr>';

@@ -1,13 +1,13 @@
 <?php
 ignore_user_abort(true);
-session_start();
+//session_start();
 if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
 	
-	//Header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); //Дата в прошлом
-	//Header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0"); // HTTP/1.1
-	//Header("Pragma: no-cache"); // HTTP/1.1
-	//Header("Last-Modified: ".gmdate("D, d M Y H:i:s")."GMT");
-	//header('Content-Type: text/html;charset=UTF-8');
+	Header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); //Дата в прошлом
+	Header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0"); // HTTP/1.1
+	Header("Pragma: no-cache"); // HTTP/1.1
+	Header("Last-Modified: ".gmdate("D, d M Y H:i:s")."GMT");
+	header('Content-Type: text/html;charset=UTF-8');
 	$updated = 0;
 	
 	$is_not_writable = array();
@@ -220,7 +220,10 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED
 			
 			recurse_copy($dir_from, $dir_to);
 			
-			$new_version = file_get_contents(getcwd().'/archive_version_update/version.conf');
+			$dir_source_version = getcwd().'/archive_version_update';
+			$dirs_from_version = scandir($dir_source_version);
+			$dir_from_version = $dir_source_version.'/'.$dirs_from_version[2];
+			$new_version = file_get_contents($dir_from_version.'/version.conf');
 			file_put_contents(getcwd().'/conf/version.conf', $new_version);
 			copy(getcwd().'/temp_files/conf.conf', getcwd().'/conf/conf.conf');
 			
@@ -247,7 +250,6 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED
 			unlink(getcwd().'/archive.zip');
 			removeDirectory(getcwd().'/archive_version_update');
 			unlink(getcwd().'/archive_version.zip');
-			//echo 'ok';
 			$updated = 1;
 			$db = null;
 		}
