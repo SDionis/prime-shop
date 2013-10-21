@@ -86,6 +86,7 @@ class InstallController extends Controller{
 				echo json_encode($error);
 				exit;
 			}
+			$db->query("SET NAMES 'utf8'");
 			chdir(dirname($_SERVER['SCRIPT_FILENAME']).'/conf');
 				
 			$data = array(
@@ -109,10 +110,14 @@ class InstallController extends Controller{
 					exit;
 				}
 			}
+			$filename = dirname($_SERVER['SCRIPT_FILENAME']).'/sql/tables.sql';
+			$sql_content = file_get_contents($filename);
+			$db->query("START TRANSACTION;");
+			$db->exec($sql_content);
 			$filename = dirname($_SERVER['SCRIPT_FILENAME']).'/sql/data.sql';
 			$sql_content = file_get_contents($filename);
-			$db->query("SET NAMES 'utf8'");
 			$db->exec($sql_content);
+			$db->query("COMMIT;");
 			echo json_encode('');
 			exit;
 		}
