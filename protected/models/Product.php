@@ -565,7 +565,8 @@ class product {
     }
     
     public function get_prod_name($prod_info) {
-        switch($type) {
+    	
+        switch($prod_info['type']) {
             case '':
                 $prod_name = $prod_info['name'];
                 break;

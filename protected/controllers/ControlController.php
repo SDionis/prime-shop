@@ -509,7 +509,7 @@ class ControlController extends Controller
         $setting_names = array(
         	'shop_name' => 'Название Вашего Магазина', 
         	'aff_id' => 'ID партнера из hasoffers',
-        	'title_main' => 'Title для главной страницы',
+        	/*'title_main' => 'Title для главной страницы',
         	'descr_main' => 'Description для главной страницы',
         	'keywords_main' => 'Keywords для главной страницы',
         	'title_cat' => 'Title для страницы категорий',
@@ -517,7 +517,7 @@ class ControlController extends Controller
         	'keywords_cat' => 'Keywords для страницы категорий',
         	'title_prod' => 'Title для страницы товара',
         	'descr_prod' => 'Description для страницы товара',
-        	'keywords_prod' => 'Keywords для страницы товара',
+        	'keywords_prod' => 'Keywords для страницы товара',*/
         );
         if (!empty($_POST) && empty($_SERVER['HTTP_X_REQUESTED_WITH'])) {
             $settings->update_settings($_POST);
@@ -633,29 +633,7 @@ class ControlController extends Controller
     	chdir($_SERVER['DOCUMENT_ROOT'].Yii::app()->request->baseUrl);
     	$error = array();
     	$is_updatable = 0;
-    	/*$remote_file = 'https://github.com/primelead/prime-shop/archive/master.zip';
-    	$ch = curl_init();
-    	curl_setopt($ch, CURLOPT_URL, $remote_file);
-    	curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/24.0");
-    	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-    	curl_setopt($ch, CURLOPT_MAXREDIRS, 4);
-    	curl_setopt($ch, CURLOPT_BINARYTRANSFER, 1);
-    	curl_setopt($ch, CURLOPT_HEADER, 1);
-    	curl_setopt($ch, CURLOPT_NOBODY, 1);
-    	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     	
-    	$headers = curl_exec ($ch);
-    	curl_close ($ch);
-    	$headers_arr = explode("\n", $headers);
-    	$res = array();
-    	foreach($headers_arr as $val){
-    		$val2 = explode('Content-Length:', $val);
-    		if(count($val2) > 1){
-    			$res[] = trim($val2[1]);
-    		}
-    	}
-    	$bytes = $res[(count($res)-1)];
-    	*/
     	$download_path = 'https://github.com/primelead/prime-shop-version/archive/master.zip';
     	$archive_path = getcwd().'/archive_version.zip';
     	$dir_source = getcwd().'/archive_version_update';
@@ -717,7 +695,6 @@ class ControlController extends Controller
     		unlink($archive_path);
     	}
     	
-    	
     	//echo '<pre>';
     	//print_r($headers_arr);
     	//echo '</pre>';
@@ -738,5 +715,28 @@ class ControlController extends Controller
     		}
     	}
     	@rmdir($dir);
+    }
+    
+    public function actionMetatags() {
+    	$metatags = new Metatags();
+    	$metatags_names = array(
+    		'title_main' => 'Title для главной страницы',
+    		'descr_main' => 'Description для главной страницы',
+    		'keywords_main' => 'Keywords для главной страницы',
+    		'title_cat' => 'Title для страницы категорий',
+    		'descr_cat' => 'Description для страницы категорий',
+    		'keywords_cat' => 'Keywords для страницы категорий',
+    		'title_prod' => 'Title для страницы товара',
+    		'descr_prod' => 'Description для страницы товара',
+    		'keywords_prod' => 'Keywords для страницы товара',
+    	);
+    	if (!empty($_POST) && empty($_SERVER['HTTP_X_REQUESTED_WITH'])) {
+    		$metatags->update_metatags($_POST);
+    		header('Location: '.$_SERVER['REDIRECT_URL']);
+    	}
+    	
+    	$metatags_info = $metatags->get_metatags($metatags_names);
+    	$output_array = array('metatags_info' => $metatags_info);
+    	$this->render('site/Metatags', $output_array);
     }
 }

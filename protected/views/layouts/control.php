@@ -1,9 +1,9 @@
 <?php
-header('Content-Type: text/html;charset=UTF-8');
 Header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); //Дата в прошлом
-Header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+Header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0"); // HTTP/1.1
 Header("Pragma: no-cache"); // HTTP/1.1
 Header("Last-Modified: ".gmdate("D, d M Y H:i:s")."GMT");
+header('Content-Type: text/html;charset=UTF-8');
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -52,10 +52,16 @@ body {
 .menu2{
     margin: 0 auto;
     min-width: 100px;
-    max-width: 64%;
+    max-width: 70%;
     text-align:center;
     margin-bottom: 10px;
 	margin-top: 10px;
+}
+.active{
+	text-decoration: none;
+	background-color: #eeeeee;
+	color: #005580;
+	outline: 0 none;
 }
 
 </style>
@@ -71,6 +77,7 @@ body {
         <!--<li><a href="<?=$this->index_point?>control/DownloadAllImages">Скачать все картинки</a></li>-->
         <li><a href="<?=$this->index_point?>control/Settings">Настройки</a></li>
         <li><a href="<?=$this->index_point?>control/Counts">Счетчики</a></li>
+        <li><a href="<?=$this->index_point?>control/Metatags">Метатеги</a></li>
         <li><a href="<?=$this->index_point?>control/Update">Обновление</a></li>
         <li><a href="<?=$this->index_point?>control/Return_to_install_state">Удаление магазина</a></li>
     </ul>

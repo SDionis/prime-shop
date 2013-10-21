@@ -109,12 +109,13 @@ class FaceController extends Controller {
         $my_shop_name = $settings->get_setting_by_setting_name('shop_name');
         $alt_title = 'Интернет-магазин '.$my_shop_name['setting_value'];
         
-        $meta_tags = $settings->get_settings_info_by_setting_names(array('title_main', 'descr_main', 'keywords_main'));
+        $metatags_obj = new Metatags();
+        $meta_tags = $metatags_obj->get_metatags_info_by_metatags_names(array('title_main', 'descr_main', 'keywords_main'));
         
         $this->title = !empty($meta_tags['title_main'])?str_replace('{%магазин%}', $my_shop_name['setting_value'], $meta_tags['title_main']):$alt_title;
         
-        $this->description = str_replace('{%магазин%}', $my_shop_name['setting_value'], $meta_tags['descr_main']);
-        $this->keywords = str_replace('{%магазин%}', $my_shop_name['setting_value'], $meta_tags['keywords_main']);
+        $this->description = str_replace('{%магазин%}', $my_shop_name['value'], $meta_tags['descr_main']);
+        $this->keywords = str_replace('{%магазин%}', $my_shop_name['value'], $meta_tags['keywords_main']);
         
     	$product = new Product();
     	$product_ids = $product->get_product_ids();
@@ -277,7 +278,8 @@ class FaceController extends Controller {
             unset($_SESSION['category_ids']);
             $cat_name = $_SESSION['cat_name'];
             
-            $meta_tags = $settings->get_settings_info_by_setting_names(array('title_cat', 'descr_cat', 'keywords_cat'));
+            $metatags_obj = new Metatags();
+            $meta_tags = $metatags_obj->get_metatags_info_by_metatags_names(array('title_cat', 'descr_cat', 'keywords_cat'));
             $alt_title =  $cat_name.' - купить по лучшей цене в магазине '.$my_shop_name['setting_value'];
             $this->title = !empty($meta_tags['title_cat'])?$meta_tags['title_cat']:$alt_title;
             $this->title = str_replace('{%категория%}', $cat_name, $this->title );
@@ -319,7 +321,8 @@ class FaceController extends Controller {
             $cat_info = $product->get_cat_info_by_prod_info($prod_info['id_category'], $prod_info['id_shop']);
             $prod_name = $product->get_prod_name($prod_info);
             
-            $meta_tags = $settings->get_settings_info_by_setting_names(array('title_prod', 'descr_prod', 'keywords_prod'));
+            $metatags_obj = new Metatags();
+            $meta_tags = $metatags_obj->get_metatags_info_by_metatags_names(array('title_prod', 'descr_prod', 'keywords_prod'));
             $alt_title =  $cat_info['cat_name'].' '.$prod_name.' купить по лучшей цене в магазине '.$my_shop_name['setting_value'];
             $this->title = !empty($meta_tags['title_prod'])?$meta_tags['title_prod']:$alt_title;
             $this->title = str_replace(array('{%категория%}', '{%товар%}', '{%магазин%}'), array($cat_info['cat_name'], $prod_name, $my_shop_name['setting_value']), $this->title );

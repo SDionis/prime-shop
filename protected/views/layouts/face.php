@@ -1,9 +1,9 @@
 <?php
-header('Content-Type: text/html;charset=UTF-8');
 Header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); //Дата в прошлом
-Header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+Header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0"); // HTTP/1.1
 Header("Pragma: no-cache"); // HTTP/1.1
 Header("Last-Modified: ".gmdate("D, d M Y H:i:s")."GMT");
+header('Content-Type: text/html;charset=UTF-8');
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
