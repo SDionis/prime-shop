@@ -1,5 +1,4 @@
-
-<form method="POST">
+<form id="form_edit_prod" method="POST">
 <table class="top_table">
 
 <?
@@ -7,6 +6,7 @@
 switch ($current_product['type']) {
     case '':
         $data = array(
+        	'id' => array('type' => 'text', 'name' => 'id', 'val' => $current_product['id']),
             'type' => array('type' => 'select', 'name' => 'type', 'val' => $current_product['type']),
             'available' => array('type' => 'select','name' => 'available', 'val' => $current_product['available']),
             'bid' => array('type' => 'text', 'name' => 'bid', 'val' => $current_product['bid']),
@@ -27,13 +27,17 @@ switch ($current_product['type']) {
             'sales_notes' => array('type' => 'text','name' => 'sales_notes', 'val' => $current_product['sales_notes']),
             'manufacturer_warranty' => array('type' => 'select','name' => 'manufacturer_warranty', 'val' => $current_product['manufacturer_warranty']),
             'country_of_origin' => array('type' => 'text','name' => 'country_of_origin', 'val' => $current_product['country_of_origin']),
-            'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
+            //'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
             'new_sign' => array('type' => 'select','name' => 'new_sign', 'val' => $current_product['new_sign']),
             'spesial_sign' => array('type' => 'select','name' => 'spesial_sign', 'val' => $current_product['spesial_sign']),
+            'prod_title' => array('type' => 'text','name' => 'prod_title', 'val' => $current_product['prod_title']),
+            'prod_description' => array('type' => 'textarea','name' => 'prod_description', 'val' => $current_product['prod_description']),
+            'prod_keywords' => array('type' => 'text','name' => 'prod_keywords', 'val' => $current_product['prod_keywords']),
         );
         break;
     case 'vendor.model':
         $data = array(
+        	'id' => array('type' => 'text', 'name' => 'id', 'val' => $current_product['id']),
             'type' => array('type' => 'select', 'name' => 'type', 'val' => $current_product['type']),
             'available' => array('type' => 'select','name' => 'available', 'val' => $current_product['available']),
             'bid' => array('type' => 'text', 'name' => 'bid', 'val' => $current_product['bid']),
@@ -58,14 +62,18 @@ switch ($current_product['type']) {
             'country_of_origin' => array('type' => 'text','name' => 'country_of_origin', 'val' => $current_product['country_of_origin']),
             'barcode' => array('type' => 'text','name' => 'barcode', 'val' => 'barcode'),
             'param' => array('type' => 'text','name' => 'param', 'val' => 'param'),
-            'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
+            //'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
             'new_sign' => array('type' => 'select','name' => 'new_sign', 'val' => $current_product['new_sign']),
             'spesial_sign' => array('type' => 'select','name' => 'spesial_sign', 'val' => $current_product['spesial_sign']),
+            'prod_title' => array('type' => 'text','name' => 'prod_title', 'val' => $current_product['prod_title']),
+            'prod_description' => array('type' => 'textarea','name' => 'prod_description', 'val' => $current_product['prod_description']),
+            'prod_keywords' => array('type' => 'text','name' => 'prod_keywords', 'val' => $current_product['prod_keywords']),
         );
         
         break;
     case 'book':
         $data = array(
+        	'id' => array('type' => 'text', 'name' => 'id', 'val' => $current_product['id']),
             'type' => array('type' => 'select', 'name' => 'type', 'val' => $current_product['type']),
             'available' => array('type' => 'select','name' => 'available', 'val' => $current_product['available']),
             'bid' => array('type' => 'text', 'name' => 'bid', 'val' => $current_product['bid']),
@@ -95,13 +103,17 @@ switch ($current_product['type']) {
             'description' => array('type' => 'textarea','name' => 'description', 'val' => $current_product['description']),
             'downloadable' => array('type' => 'select','name' => 'downloadable', 'val' => $current_product['downloadable']),
             'age' => array('type' => 'select','name' => 'age', 'val' => $current_product['age']),
-            'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
+            //'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
             'new_sign' => array('type' => 'select','name' => 'new_sign', 'val' => $current_product['new_sign']),
             'spesial_sign' => array('type' => 'select','name' => 'spesial_sign', 'val' => $current_product['spesial_sign']),
+            'prod_title' => array('type' => 'text','name' => 'prod_title', 'val' => $current_product['prod_title']),
+            'prod_description' => array('type' => 'textarea','name' => 'prod_description', 'val' => $current_product['prod_description']),
+            'prod_keywords' => array('type' => 'text','name' => 'prod_keywords', 'val' => $current_product['prod_keywords']),
         );
         break;
     case 'audiobook':
         $data = array(
+        	'id' => array('type' => 'text', 'name' => 'id', 'val' => $current_product['id']),
             'type' => array('type' => 'select', 'name' => 'type', 'val' => $current_product['type']),
             'available' => array('type' => 'select','name' => 'available', 'val' => $current_product['available']),
             'bid' => array('type' => 'text', 'name' => 'bid', 'val' => $current_product['bid']),
@@ -126,14 +138,18 @@ switch ($current_product['type']) {
             'description' => array('type' => 'textarea','name' => 'description', 'val' => $current_product['description']),
             'downloadable' => array('type' => 'select','name' => 'downloadable', 'val' => $current_product['downloadable']),
             'age' => array('type' => 'select','name' => 'age', 'val' => $current_product['age']),
-            'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
+            //'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
             'new_sign' => array('type' => 'select','name' => 'new_sign', 'val' => $current_product['new_sign']),
             'spesial_sign' => array('type' => 'select','name' => 'spesial_sign', 'val' => $current_product['spesial_sign']),
+            'prod_title' => array('type' => 'text','name' => 'prod_title', 'val' => $current_product['prod_title']),
+            'prod_description' => array('type' => 'textarea','name' => 'prod_description', 'val' => $current_product['prod_description']),
+            'prod_keywords' => array('type' => 'text','name' => 'prod_keywords', 'val' => $current_product['prod_keywords']),
         );
         break;
         
     case 'artist.title':
         $data = array(
+        	'id' => array('type' => 'text', 'name' => 'id', 'val' => $current_product['id']),
             'type' => array('type' => 'select', 'name' => 'type', 'val' => $current_product['type']),
             'available' => array('type' => 'select','name' => 'available', 'val' => $current_product['available']),
             'bid' => array('type' => 'text', 'name' => 'bid', 'val' => $current_product['bid']),
@@ -159,13 +175,17 @@ switch ($current_product['type']) {
             'adult' => array('type' => 'select','name' => 'adult', 'val' => $current_product['adult']),
             'age' => array('type' => 'select','name' => 'age', 'val' => $current_product['age']),
             'barcode' => array('type' => 'text','name' => 'barcode', 'val' => 'barcode'),
-            'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
+            //'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
             'new_sign' => array('type' => 'select','name' => 'new_sign', 'val' => $current_product['new_sign']),
             'spesial_sign' => array('type' => 'select','name' => 'spesial_sign', 'val' => $current_product['spesial_sign']),
+            'prod_title' => array('type' => 'text','name' => 'prod_title', 'val' => $current_product['prod_title']),
+            'prod_description' => array('type' => 'textarea','name' => 'prod_description', 'val' => $current_product['prod_description']),
+            'prod_keywords' => array('type' => 'text','name' => 'prod_keywords', 'val' => $current_product['prod_keywords']),
         );
         break;
     case 'tour':
         $data = array(
+        	'id' => array('type' => 'text', 'name' => 'id', 'val' => $current_product['id']),
             'type' => array('type' => 'select', 'name' => 'type', 'val' => $current_product['type']),
             'available' => array('type' => 'select','name' => 'available', 'val' => $current_product['available']),
             'bid' => array('type' => 'text', 'name' => 'bid', 'val' => $current_product['bid']),
@@ -193,13 +213,17 @@ switch ($current_product['type']) {
             'transport' => array('type' => 'text','name' => 'transport', 'val' => $current_product['transport']),
             'description' => array('type' => 'textarea','name' => 'description', 'val' => $current_product['description']),
             'age' => array('type' => 'select','name' => 'age', 'val' => $current_product['age']),
-            'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
+            //'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
             'new_sign' => array('type' => 'select','name' => 'new_sign', 'val' => $current_product['new_sign']),
             'spesial_sign' => array('type' => 'select','name' => 'spesial_sign', 'val' => $current_product['spesial_sign']),
+            'prod_title' => array('type' => 'text','name' => 'prod_title', 'val' => $current_product['prod_title']),
+            'prod_description' => array('type' => 'textarea','name' => 'prod_description', 'val' => $current_product['prod_description']),
+            'prod_keywords' => array('type' => 'text','name' => 'prod_keywords', 'val' => $current_product['prod_keywords']),
         );
         break;
     case 'event-ticket':
         $data = array(
+        	'id' => array('type' => 'text', 'name' => 'id', 'val' => $current_product['id']),
             'type' => array('type' => 'select', 'name' => 'type', 'val' => $current_product['type']),
             'available' => array('type' => 'select','name' => 'available', 'val' => $current_product['available']),
             'bid' => array('type' => 'text', 'name' => 'bid', 'val' => $current_product['bid']),
@@ -223,9 +247,12 @@ switch ($current_product['type']) {
             'is_premiere' => array('type' => 'select','name' => 'is_premiere', 'val' => $current_product['is_premiere']),
             'is_kids' => array('type' => 'select','name' => 'is_kids', 'val' => $current_product['is_kids']),
             'age' => array('type' => 'select','name' => 'age', 'val' => $current_product['age']),
-            'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
+            //'on_main' => array('type' => 'select','name' => 'on_main', 'val' => $current_product['on_main']),
             'new_sign' => array('type' => 'select','name' => 'new_sign', 'val' => $current_product['new_sign']),
             'spesial_sign' => array('type' => 'select','name' => 'spesial_sign', 'val' => $current_product['spesial_sign']),
+            'prod_title' => array('type' => 'text','name' => 'prod_title', 'val' => $current_product['prod_title']),
+            'prod_description' => array('type' => 'textarea','name' => 'prod_description', 'val' => $current_product['prod_description']),
+            'prod_keywords' => array('type' => 'text','name' => 'prod_keywords', 'val' => $current_product['prod_keywords']),
         );
         break;
 }
@@ -233,17 +260,21 @@ foreach($data as $key => $val) {
     
     switch ($val['type']) {
         case 'textarea':
-            echo '<tr class="tr_data"><td class="td_name">'.$key.'</td><td><textarea name="'.$val['name'].'" >'.$val['val'].'</textarea></td></tr>';
+            echo '<tr class="tr_data"><td class="td_name">'.$product_obj->aliases($key).'</td><td><textarea name="'.$val['name'].'" >'.$val['val'].'</textarea></td></tr>';
             break;
         case 'text':
             $key_taken = 0;
             switch ($key) {
             	case 'translit': 
-            		echo '<tr class="tr_data"><td class="td_name">'.$key.'</td><td><input readonly="readonly" type="text" name="'.$val['name'].'" value="'.$val['val'].'" /></td></tr>';
+            		echo '<tr class="tr_data"><td class="td_name">'.$product_obj->aliases($key).'</td><td><input readonly="readonly" type="text" value="'.$val['val'].'" /></td></tr>';
+            		$key_taken = 1;
+            		break;
+            	case 'id':
+            		echo '<tr class="tr_data"><td class="td_name">'.$product_obj->aliases($key).'</td><td><input readonly="readonly" type="text" value="'.$val['val'].'" /></td></tr>';
             		$key_taken = 1;
             		break;
                 case 'pictures': 
-                    echo '<tr class="tr_data"><td class="td_name">'.$key.'</td><td>';
+                    echo '<tr class="tr_data"><td class="td_name">'.$product_obj->aliases($key).'</td><td>';
                     foreach ($pictures as $picture) {
                         echo '<input type="text" name="picture[]" value="'.$picture.'" />';
                         echo '<a class="del_icon_pictures" href=""><img width="20px" height="20px" src="../images/delete.png" title="удалить"/></a>';
@@ -253,7 +284,7 @@ foreach($data as $key => $val) {
                     $key_taken = 1;
                     break;
                 case 'param': 
-                    echo '<tr class="tr_data"><td class="td_name">'.$key.'</td><td class="td_params">';
+                    echo '<tr class="tr_data"><td class="td_name">'.$product_obj->aliases($key).'</td><td class="td_params">';
                     echo '<table class="table_params"><tr class="text_only"><td colspan="4">Параметры</td></tr><tr class="text_only"><td>Название</td><td>Ед. изм.</td><td>Величина</td><td></td></tr>';
                     foreach ($param as $param_val) {
                         echo '<tr><td width="50%"><input type="text" name="param_name[]" value="'.$param_val['param_name'].'" /></td>';
@@ -267,7 +298,7 @@ foreach($data as $key => $val) {
                     $key_taken = 1;
                     break;
                 case 'barcode': 
-                    echo '<tr class="tr_data"><td class="td_name">'.$key.'</td><td>';
+                    echo '<tr class="tr_data"><td class="td_name">'.$product_obj->aliases($key).'</td><td>';
                     foreach ($barcode as $barcode_scalar) {
                         echo '<input type="text" name="barcode[]" value="'.$barcode_scalar.'" />';
                         echo '<a class="del_icon_barcode" href=""><img width="20px" height="20px" src="../images/delete.png" title="удалить"/></a>';
@@ -277,7 +308,7 @@ foreach($data as $key => $val) {
                     $key_taken = 1;
                     break;
                 case 'dataTour': 
-                    echo '<tr class="tr_data"><td class="td_name">'.$key.'</td><td>';
+                    echo '<tr class="tr_data"><td class="td_name">'.$product_obj->aliases($key).'</td><td>';
                     foreach ($dataTour as $dataTour_scalar) {
                         echo '<input type="text" name="dataTour[]" value="'.$dataTour_scalar.'" />';
                         echo '<a class="del_icon_dataTour" href=""><img width="20px" height="20px" src="../images/delete.png" title="удалить"/></a>';
@@ -289,14 +320,14 @@ foreach($data as $key => $val) {
                     break;
             }
             if ($key_taken == 0) {
-                echo '<tr class="tr_data"><td class="td_name">'.$key.'</td><td><input type="text" name="'.$val['name'].'" value="'.$val['val'].'" /></td></tr>';
+                echo '<tr class="tr_data"><td class="td_name">'.$product_obj->aliases($key).'</td><td><input type="text" name="'.$val['name'].'" value="'.$val['val'].'" /></td></tr>';
             }
             break;
         case 'select':
             switch ($key) {
                 case 'id_currency': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     foreach ($currencies as $currency) {
                         $selected = '';
@@ -312,7 +343,7 @@ foreach($data as $key => $val) {
                     break;
                 case 'id_category': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     foreach ($categories as $category) {
                         $selected = '';
@@ -328,7 +359,7 @@ foreach($data as $key => $val) {
                     break;
                 case 'store': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -341,8 +372,8 @@ foreach($data as $key => $val) {
                         $selected3 = 'selected="selected"';
                     }
                     echo '<option '.$selected1.' value=""></option>';
-                    echo '<option '.$selected2.' value="true">true</option>';
-                    echo '<option '.$selected3.' value="false">false</option>';
+                    echo '<option '.$selected2.' value="true">Да</option>';
+                    echo '<option '.$selected3.' value="false">Нет</option>';
                     
                     echo '</select>
                     </td>
@@ -350,7 +381,7 @@ foreach($data as $key => $val) {
                     break;  
                 case 'pickup': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -363,8 +394,8 @@ foreach($data as $key => $val) {
                         $selected3 = 'selected="selected"';
                     }
                     echo '<option '.$selected1.' value=""></option>';
-                    echo '<option '.$selected2.' value="true">true</option>';
-                    echo '<option '.$selected3.' value="false">false</option>';
+                    echo '<option '.$selected2.' value="true">Да</option>';
+                    echo '<option '.$selected3.' value="false">Нет</option>';
                     
                     echo '</select>
                     </td>
@@ -372,7 +403,7 @@ foreach($data as $key => $val) {
                     break;
                 case 'delivery': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -385,8 +416,8 @@ foreach($data as $key => $val) {
                         $selected3 = 'selected="selected"';
                     }
                     echo '<option '.$selected1.' value=""></option>';
-                    echo '<option '.$selected2.' value="true">true</option>';
-                    echo '<option '.$selected3.' value="false">false</option>';
+                    echo '<option '.$selected2.' value="true">Да</option>';
+                    echo '<option '.$selected3.' value="false">Нет</option>';
                     
                     echo '</select>
                     </td>
@@ -394,7 +425,7 @@ foreach($data as $key => $val) {
                     break; 
                 case 'manufacturer_warranty': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -407,8 +438,8 @@ foreach($data as $key => $val) {
                         $selected3 = 'selected="selected"';
                     }
                     echo '<option '.$selected1.' value=""></option>';
-                    echo '<option '.$selected2.' value="true">true</option>';
-                    echo '<option '.$selected3.' value="false">false</option>';
+                    echo '<option '.$selected2.' value="true">Да</option>';
+                    echo '<option '.$selected3.' value="false">Нет</option>';
                     
                     echo '</select>
                     </td>
@@ -416,7 +447,7 @@ foreach($data as $key => $val) {
                     break;  
                 case 'downloadable': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -429,8 +460,8 @@ foreach($data as $key => $val) {
                         $selected3 = 'selected="selected"';
                     }
                     echo '<option '.$selected1.' value=""></option>';
-                    echo '<option '.$selected2.' value="true">true</option>';
-                    echo '<option '.$selected3.' value="false">false</option>';
+                    echo '<option '.$selected2.' value="true">Да</option>';
+                    echo '<option '.$selected3.' value="false">Нет</option>';
                     
                     echo '</select>
                     </td>
@@ -438,7 +469,7 @@ foreach($data as $key => $val) {
                     break; 
                 case 'age': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -468,7 +499,7 @@ foreach($data as $key => $val) {
                     break;
                 case 'available': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -478,8 +509,8 @@ foreach($data as $key => $val) {
                     } else if ($val['val'] == 'false') {
                         $selected3 = 'selected="selected"';
                     }
-                    echo '<option '.$selected2.' value="true">true</option>';
-                    echo '<option '.$selected3.' value="false">false</option>';
+                    echo '<option '.$selected2.' value="true">Да</option>';
+                    echo '<option '.$selected3.' value="false">Нет</option>';
                     
                     echo '</select>
                     </td>
@@ -487,7 +518,7 @@ foreach($data as $key => $val) {
                     break;
                 case 'adult': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -500,8 +531,8 @@ foreach($data as $key => $val) {
                         $selected3 = 'selected="selected"';
                     }
                     echo '<option '.$selected1.' value=""></option>';
-                    echo '<option '.$selected2.' value="true">true</option>';
-                    echo '<option '.$selected3.' value="false">false</option>';
+                    echo '<option '.$selected2.' value="true">Да</option>';
+                    echo '<option '.$selected3.' value="false">Нет</option>';
                     
                     echo '</select>
                     </td>
@@ -509,7 +540,7 @@ foreach($data as $key => $val) {
                     break;
                 case 'is_premiere': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -528,7 +559,7 @@ foreach($data as $key => $val) {
                     break;
                 case 'is_kids': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -546,7 +577,7 @@ foreach($data as $key => $val) {
                     break;
                 case 'type': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     
                     
@@ -570,7 +601,7 @@ foreach($data as $key => $val) {
                     break;
                 case 'on_main': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -588,7 +619,7 @@ foreach($data as $key => $val) {
                     break;
                 case 'new_sign': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -606,7 +637,7 @@ foreach($data as $key => $val) {
                     break;
                 case 'spesial_sign': 
                     echo '<tr class="tr_data">
-                    <td class="td_name">'.$key.'</td><td>
+                    <td class="td_name">'.$product_obj->aliases($key).'</td><td>
                     <select name="'.$val['name'].'">';
                     $selected1 = '';
                     $selected2 = '';
@@ -631,87 +662,11 @@ foreach($data as $key => $val) {
 
 
 ?>
-<!--<tr class="tr_data">
-    <td class="td_name">На главной</td>
-    <td><input type="checkbox" name="on_main" /></td>
-</tr>-->
+
 </table>
 <div class="save_button_container"><input type="submit" value="Сохранить" /></div>
 
 </form>
-
-<style type="text/css">
-
-</style>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('select[name="type"]').live('change', function(){
-            $.ajax({
-                url: '',  
-                type: 'POST',
-                data: {option_type:'change_type', option_val: $(this).val()},                              
-                success: function (data_return) { 
-                    $('.top_table').html($(data_return).find('.top_table:first').html());
-                    //console.info($(data_return).find('.top_table:first').html());
-                },              
-            });
-        });
-        
-        $('.add_val_picture').live('click', function(){
-            //var input_name = $(this).prev().attr('name');
-            //var input_type = $(this).prev().attr('type');
-            //console.info($(this).prev('input').attr('name'));
-            $(this).before('<input type="text" name="picture[]" /><a class="del_icon_pictures" href=""><img width="20px" height="20px" src="../images/delete.png" title="удалить"/></a>');
-            $(this).blur();
-            return false;
-        });
-        
-        $('.add_val_param').live('click', function(){
-            $('.table_params tr:last').after('<tr><td><input type="text" name="param_name[]" /></td><td><input type="text" name="param_unit[]" /></td><td><input type="text" name="param_value[]" /></td><td><a class="del_icon_params" href=""><img width="20px" height="20px" src="../images/delete.png" title="удалить"/></a></td></tr>');
-            $(this).blur();
-            return false;
-        });
-        
-        $('.del_icon_pictures').live('click', function(){
-            $(this).prev().remove();
-            $(this).blur();
-            $(this).remove();
-            return false;
-        });
-        
-        $('.del_icon_params').live('click', function(){
-            $(this).parent().parent().remove();
-            return false;
-        });
-        
-        $('.add_val_barcode').live('click', function(){
-            $(this).before('<input type="text" name="barcode[]" /><a class="del_icon_barcode" href=""><img width="20px" height="20px" src="../images/delete.png" title="удалить"/></a>');
-            $(this).blur();
-            return false;
-        });
-        
-        $('.del_icon_barcode').live('click', function(){
-            $(this).prev().remove();
-            $(this).blur();
-            $(this).remove();
-            return false;
-        });
-        
-        $('.add_val_dataTour').live('click', function(){
-            $(this).before('<input type="text" name="dataTour[]" /><a class="del_icon_dataTour" href=""><img width="20px" height="20px" src="../images/delete.png" title="удалить"/></a>');
-            $(this).blur();
-            return false;
-        });
-        
-        $('.del_icon_dataTour').live('click', function(){
-            $(this).prev().remove();
-            $(this).blur();
-            $(this).remove();
-            return false;
-        });
-    });
-    
-
-</script>
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/admin/style.css" media="screen, projection" />
+<?
+include 'edit_product_scripts.php'; 
+?>

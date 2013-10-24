@@ -343,7 +343,11 @@ class catalog {
     }
     public function updateCatalog($id, $data) {
         $db = Yii::app()->db;
-        $sql = "UPDATE `categories` SET `cat_name` = ".$db->quoteValue($data['cat_name'])." WHERE id = ".$id;
+        $sql = "UPDATE `categories` SET `cat_name` = ".$db->quoteValue($data['cat_name']).", 
+        		`cat_title` = ".$db->quoteValue($data['cat_title']).",
+        		`cat_description` = ".$db->quoteValue($data['cat_description']).",
+        		`cat_keywords` = ".$db->quoteValue($data['cat_keywords'])."
+        		WHERE id = ".$id;
         $command = $db->createCommand($sql); 
         $command->execute();
     }

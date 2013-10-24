@@ -23,32 +23,32 @@
 </tr>
 
 <tr class="tr_data">
-    <td class="td_name">platform</td>
+    <td class="td_name">CMS</td>
     <td><input type="text" name="platform" value="<?=$shop_info['platform']?>" /></td>
 </tr>
 
 <tr class="tr_data">
-    <td class="td_name">version</td>
+    <td class="td_name">Версия CMS</td>
     <td><input type="text" name="version" value="<?=$shop_info['version']?>" /></td>
 </tr>
 
 <tr class="tr_data">
-    <td class="td_name">agency</td>
+    <td class="td_name">Наименование агентства, которое оказывает техническую поддержку магазину</td>
     <td><input type="text" name="agency" value="<?=$shop_info['agency']?>" /></td>
 </tr>
 
 <tr class="tr_data">
-    <td class="td_name">email</td>
+    <td class="td_name">Контактный адрес разработчиков CMS</td>
     <td><input type="text" name="email" value="<?=$shop_info['email']?>" /></td>
 </tr>
 
 <tr class="tr_data">
-    <td class="td_name">local_delivery_cost</td>
+    <td class="td_name">Общая стоимость доставки</td>
     <td><input type="text" name="local_delivery_cost" value="<?=$shop_info['local_delivery_cost']?>" /></td>
 </tr>
 
 <tr class="tr_data">
-    <td class="td_name">offer_id</td>
+    <td class="td_name">ID оффера</td>
     <td><input type="text" name="offer_id" value="<?=$shop_info['offer_id']?>" /></td>
 </tr>
 

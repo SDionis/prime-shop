@@ -356,6 +356,15 @@ class product {
                 case 'spesial_sign':
                     $sub_query[] = " `spesial_sign` = ".(int) $val." ";
                     break;
+                case 'prod_title':
+                	$sub_query[] = " `prod_title` = ".$db->quoteValue($val)." ";
+                    break;
+                case 'prod_description':
+                    $sub_query[] = " `prod_description` = ".$db->quoteValue($val)." ";
+                    break;
+                case 'prod_keywords':
+                    $sub_query[] = " `prod_keywords` = ".$db->quoteValue($val)." ";
+                    break;
                 
                 case 'picture':
                     foreach ($val as $val2) {
@@ -748,6 +757,87 @@ class product {
 	    	$sql = "DELETE FROM `products` WHERE id IN (".implode(',', $ids).")";
 	    	$command = $db->createCommand($sql);
 	    	$command->execute();
+    	}
+    }
+    
+    public function aliases($key){
+    	$aliases = array(
+    		'id' => 'Идентификатор товарного предложения',
+    		'type' => 'Тип описания товара',
+    		'available' => 'Доступно или под заказ',
+    		'bid' => 'bid (oсновная ставка)',
+    		'cbid' => 'cbid (cтавка для карточек)',
+    		'url' => 'URL страницы товара',
+    		'price' => 'Цена',
+    		'translit' => 'Транслит',
+    		'id_currency' => 'Идентификатор валюты товара',
+    		'id_category' => 'Идентификатор категории товара',
+    		'pictures' => 'Ссылка на картинку товарного предложения',
+    		'store' => 'Возможность купить товар в розничном магазине',
+    		'pickup' => 'Возможность самовывоза',
+    		'delivery' => 'Возможность доставки',
+    		'local_delivery_cost' => 'Стоимость доставки товара',
+    		'name' => 'Название товарного предложения',
+    		'description' => 'Описание товарного предложения',
+    		'sales_notes' => 'Примечания',
+    		'manufacturer_warranty' => 'Гарантия производителя',
+    		'country_of_origin' => 'Страна производства товара',
+    		'typePrefix' => 'Группа товаров/категория',
+    		'vendor' => 'Производитель',
+    		'vendorCode' => 'Код товара (указывается код производителя)',
+    		'model' => 'Модель',
+    		'barcode' => 'Штрихкод товара, указанный производителем',
+    		'param' => 'Характеристики товара',
+    		'author' => 'Автор произведения',
+    		'publisher' => 'Издательство',
+    		'series' => 'Серия',
+    		'year' => 'Год издания',
+    		'ISBN' => 'Код книги',
+    		'volume' => 'Номер тома',
+    		'part' => 'Номер части',
+    		'language' => 'Язык произведения',
+   			'binding' => 'Переплет',
+   			'page_extent' => 'Количество страниц в книге',
+   			'table_of_contents' => 'Оглавление',
+   			'downloadable' => '',
+    		'age' => 'Возрастная категория товара',
+    		'performed_by' => 'Исполнитель(и)',
+    		'performance_type' => 'Тип аудиокниги',
+   			'storage' => 'Носитель, на котором поставляется аудиокнига',
+   			'format' => 'Формат аудиокниги',
+   			'recording_length' => 'Время звучания',
+    		'media' => 'Носитель',	
+    		'starring' => 'Актеры',
+    		'director' => 'Режиссер',
+    		'originalName' => 'Оригинальное название',
+    		'country' => 'Страна',
+    		'adult' => '',
+    		'worldRegion' => 'Часть света',
+    		'region' => 'Курорт или город',
+    		'days' => 'Количество дней тура',
+    		'dataTour' => 'Даты заездов',
+    		'hotel_stars' => 'Звезды отеля',
+    		'room' => 'Тип комнаты',
+    		'meal' => 'Тип питания',
+    		'included' => 'Что включено в стоимость тура',
+    		'transport' => 'Транспорт.',
+    		'place' => 'Место проведения',
+    		'hall' => '',
+    		'hall_url' => '',
+    		'hall_part' => '',
+    		'date' => 'Дата и время сеанса',
+    		'is_premiere' => 'Признак премьерности мероприятия',
+    		'is_kids' => 'Признак детского мероприятия',
+    		'new_sign' => 'Новый товар',
+    		'spesial_sign' => 'Популярный товар',
+			'prod_title' => 'Титул товара',	
+    		'prod_description' => 'Описание товара',
+    		'prod_keywords' => 'Ключевые слова товара',
+    	);
+    	if(!isset($aliases[$key]) || empty($aliases[$key])){
+    		return $key;
+    	} else {
+    		return $aliases[$key];
     	}
     }
     

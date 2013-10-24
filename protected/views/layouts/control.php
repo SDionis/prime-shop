@@ -1,9 +1,9 @@
 <?php
-Header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); //Дата в прошлом
+/*Header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); //Дата в прошлом
 Header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0"); // HTTP/1.1
 Header("Pragma: no-cache"); // HTTP/1.1
 Header("Last-Modified: ".gmdate("D, d M Y H:i:s")."GMT");
-header('Content-Type: text/html;charset=UTF-8');
+header('Content-Type: text/html;charset=UTF-8');*/
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -12,7 +12,9 @@ header('Content-Type: text/html;charset=UTF-8');
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/admin/bootstrap.css" media="screen, projection" />
 
 <!--<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/admin/jquery.js"></script>-->
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/admin/jquery-1.9.1.min.js"></script>
+<!--<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/admin/jquery-1.9.1.min.js"></script>-->
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/admin/jquery-1.10.2.js"></script>
+
 <script type="text/javascript">
 jQuery.fn.live = function (types, data, fn) {
     jQuery(this.context).on(types,this.selector,data,fn);

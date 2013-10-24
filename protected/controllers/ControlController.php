@@ -10,7 +10,7 @@ class ControlController extends Controller
 		$this->index_point = $index_point[0];
         Yii::app()->layout = 'control';
         $this->layout = 'control';
-        //$this->with_hashing = 1;
+        //$this->with_hashing = 1;  //включить хеширование передаваемого пароля
         
         session_start();
         
@@ -300,6 +300,7 @@ class ControlController extends Controller
             'barcode' => $barcode,
             'dataTour' => $dataTour,
             'types' => $types,
+        	'product_obj' => $product,
         );
         if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
             if ($_POST['option_type'] == 'change_type') {
@@ -313,8 +314,12 @@ class ControlController extends Controller
                     'barcode' => $barcode,
                     'dataTour' => $dataTour,
                     'types' => $types,
+                	'product_obj' => $product,
                 );
-                $this->renderPartial('site/editProduct', $output_array);
+                $output = $this->renderPartial('site/editProduct', $output_array, true);
+                $output1 = explode('<form id="form_edit_prod" method="POST">', $output);
+                $output2 = explode('</form>', $output1[1]);
+                echo $output2[0];
             }
             exit;
         }
@@ -334,8 +339,8 @@ class ControlController extends Controller
             
             $catalog = new Catalog();
             $catalog->updateCatalog((int) $_GET['id'], $_POST);
-            
-            header('Location: '.$_SERVER['REQUEST_URI']);
+            //echo 'dasd';
+           // header('Location: '.$_SERVER['REQUEST_URI']);
         }
         
         $catalog = new Catalog();
@@ -564,7 +569,7 @@ class ControlController extends Controller
 	{
 		//Yii::app()->user->logout();
 		unset($_SESSION['login']);
-		$this->redirect(Yii::app()->homeUrl.'/control');
+		$this->redirect(Yii::app()->request->baseUrl.'/control');
 	}
     
     public function actionDownloadAllImages(){

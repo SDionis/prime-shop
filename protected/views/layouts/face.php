@@ -165,7 +165,8 @@ header('Content-Type: text/html;charset=UTF-8');
     </footer>
 	<!-- JS
 	================================================== -->
-	<script src="<?=$this->index_point?>js/jquery-1.9.1.min.js"></script>
+	<!--<script src="<?=$this->index_point?>js/jquery-1.9.1.min.js"></script>-->
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/admin/jquery-1.10.2.js"></script>
 	<script src="<?=$this->index_point?>js/jquery-ui-1.10.2.min.js"></script>
 	<!-- bootstrap -->
     <script src="<?=$this->index_point?>js/bootstrap.min.js"></script>
