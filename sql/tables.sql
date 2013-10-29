@@ -301,3 +301,17 @@ CREATE TABLE IF NOT EXISTS `metatags` (
   `value` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=0 ;
+
+CREATE TABLE IF NOT EXISTS `static_pages` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `descr` varchar(255) NOT NULL,
+  `translit` varchar(255) NOT NULL,
+  `meta_title` varchar(255) NOT NULL,
+  `meta_descr` varchar(255) NOT NULL,
+  `meta_keywords` varchar(255) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `content` text NOT NULL,
+  `picture` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=0;

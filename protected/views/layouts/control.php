@@ -54,7 +54,7 @@ body {
 .menu2{
     margin: 0 auto;
     min-width: 100px;
-    max-width: 70%;
+    max-width: 84%;
     text-align:center;
     margin-bottom: 10px;
 	margin-top: 10px;
@@ -80,6 +80,7 @@ body {
         <li><a href="<?=$this->index_point?>control/Settings">Настройки</a></li>
         <li><a href="<?=$this->index_point?>control/Counts">Счетчики</a></li>
         <li><a href="<?=$this->index_point?>control/Metatags">Метатеги</a></li>
+        <li><a href="<?=$this->index_point?>control/StaticPages">Статические страницы</a></li>
         <li><a href="<?=$this->index_point?>control/Update">Обновление</a></li>
         <li><a href="<?=$this->index_point?>control/Return_to_install_state">Удаление магазина</a></li>
     </ul>

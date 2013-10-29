@@ -151,7 +151,7 @@ class product {
         $result = $command->queryColumn();
         return $result;
     }
-    
+
     public function updateProduct($id, $data) {
         $db = Yii::app()->db;
         $sub_query = array();
@@ -699,7 +699,9 @@ class product {
     		$url[count($url)] = 'page='.$page;
     	}
     	$url = implode('&', $url);
-    	$url_request_uri[1] = $url;
+    	if (!empty($url)) {
+    		$url_request_uri[1] = $url;
+    	}
     	$url_request_uri = implode('?', $url_request_uri);
     	return $url_request_uri;
     }

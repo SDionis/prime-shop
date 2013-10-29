@@ -744,4 +744,70 @@ class ControlController extends Controller
     	$output_array = array('metatags_info' => $metatags_info);
     	$this->render('site/Metatags', $output_array);
     }
+    
+    public function actionStaticPages(){
+    	$product = new Product();
+    	$AcImageCall = new AcImageCall();
+    	!empty($_GET['page']) ? $page = (int) $_GET['page'] : $page = 1;
+    	$perpage = 10;
+    	$StaticPageModel = new StaticPage();
+    	$StaticPagesPerPage = $StaticPageModel->getStaticPagesPerPage($page, $perpage);
+    	if (empty($StaticPagesPerPage['data']) && $page > 1) {
+    		header('Location: '.$_SERVER['REDIRECT_URL']);
+    		exit;
+    	}
+    	
+    	$output_array = array('StaticPagesPerPage' => $StaticPagesPerPage, 'product' => $product, 'AcImageCall' => $AcImageCall);
+    	$output = $this->render('site/Static_pages', $output_array,  true);
+    	echo $output;
+    }
+    
+    public function actionEditStaticPages(){
+    	$StaticPageModel = new StaticPage();
+    	$allowed_fields = array('title', 'descr', 'translit', 'meta_title', 'meta_descr', 'meta_keywords', 'content',);
+    	if (!empty($_POST) && empty($_SERVER['HTTP_X_REQUESTED_WITH'])) {
+    		$data = array();
+    		
+    		foreach($_POST as $key => $val) {
+    			if (in_array($key, $allowed_fields)) {
+    				$data[$key] = $val;
+    			}
+    		}
+    		
+    		if(!empty($_FILES['picture']['tmp_name'])){
+    			$newFileFullPath = $_SERVER['DOCUMENT_ROOT'].Yii::app()->request->baseUrl.'/img/'.$_FILES['picture']['name'];
+    			$newFilePath = Yii::app()->request->baseUrl.'/img/'.$_FILES['picture']['name'];
+    			if (move_uploaded_file($_FILES['picture']['tmp_name'], $newFileFullPath)) {
+    				$data['picture'] = $newFilePath;
+    			}
+    		}
+    		if (!empty($_GET['id'])) {
+    			$StaticPageModel->updateStaticPage($data, $_GET['id']);
+    			header('Location: '.$_SERVER['REQUEST_URI']);
+    		} else {
+    			$lastInsertId = $StaticPageModel->insertStaticPage($data);
+    			header('Location: '.$_SERVER['REDIRECT_URL'].'?id='.$lastInsertId);
+    		}
+    		
+    		exit;
+    	}
+    	if (!empty($_GET['id'])) {
+    		$staticPage = $StaticPageModel->getStaticPageById($_GET['id']);
+    	} else {
+    		$staticPage = array();
+    	}
+    	
+    	$output_array = array('staticPage' => $staticPage,);
+    	$output = $this->render('site/Static_pages_edit', $output_array,  true);
+    	echo $output;
+    	
+    }
+    
+    public function actionDeleteStaticPage(){
+    	$StaticPageModel = new StaticPage();
+    	$StaticPageModel->deleteStaticPage($_GET['id']);
+    	header('Location: '.$_GET['url_redirect']);
+    	exit;
+    }
+    
 }

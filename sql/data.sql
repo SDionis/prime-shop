@@ -22,3 +22,6 @@ INSERT INTO `counts` (`name`, `script`) VALUES
 ('google_analitics', ''),
 ('yandex_metrika', '');
 
+INSERT INTO `static_pages` (`title`, `descr`, `translit`, `meta_title`, `meta_descr`, `meta_keywords`, `content`, `picture`) VALUES 
+('Доставка', '', 'dostavka', 'Доставка', 'Доставка', 'Доставка', '<p>Доставка</p>\r\n', ''),
+('Оплата', '', 'oplata', 'Оплата', 'Оплата', 'Оплата', '<p>Оплата</p>\r\n', '');

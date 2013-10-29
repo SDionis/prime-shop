@@ -110,9 +110,9 @@ if (!empty($current_category_info)) {
         echo '<tr>'; 
         echo '<td width="110px"></td>';
         echo '<td width="30px">ID</td>';
-        echo '<td>Info</td>';
-        echo '<td width="100px">Price</td>';
-        echo '<td>Settings</td>';
+        echo '<td>Краткая информация</td>';
+        echo '<td width="100px">Цена</td>';
+        echo '<td>Операции</td>';
         echo '</tr>';
         foreach ($products_show as $row) {
             switch ($row['type']) {
@@ -141,13 +141,14 @@ if (!empty($current_category_info)) {
             echo '<tr>'; 
             //echo '<td><img width="100" height="100" src="../images/Brabantia.jpg" /></td>';
             if (empty($row['picture'])) {
-            	$resized_pic = $this->index_point.'img/212x192.jpg';
+            	$resized_pic = $this->index_point.'img/100x100.png';
             } else {
 				//$resized_pic = $this->index_point.'img/212x192.jpg';
 				//echo $row['picture'].'<br>';
             	$resized_pic = $AcImageCall->resize($row['picture'], 100, 100, $row['id_shop'], $row['id_product']);
             	if (empty($resized_pic)) {
-            		$resized_pic = $this->index_point.'img/212x192.jpg';
+            		//$resized_pic = $this->index_point.'img/212x192.jpg';
+            		$resized_pic = $this->index_point.'img/100x100.png';
             	}
             	//exit;
             }
@@ -271,6 +272,7 @@ table td {
 }
 .shop_name{
 	display:inline-block;
+	width: 90%;
 }
 .shop_controls{
 	display:inline-block;

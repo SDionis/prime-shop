@@ -9,6 +9,7 @@ class FaceController extends Controller {
     public $keywords;
     public $index_point_without_slash;
     public $counts;
+    public $static_pages;
     public function __construct(){
         $index_point = explode('index.php', $_SERVER['SCRIPT_NAME'], 2);
         $this->index_point = $index_point[0];
@@ -100,6 +101,9 @@ class FaceController extends Controller {
         $this->out_menu = $out_menu;
         $counts = $shop->getCounts();
         $this->counts = $counts;
+        $StaticPagesObject = new StaticPage();
+        $this->static_pages = $StaticPagesObject->getStaticPages(array('title', 'translit'));
+        
     }
     public function actionIndex() {
     	    	
@@ -182,8 +186,17 @@ class FaceController extends Controller {
     
     public function actionShowCatsOrProd(){
     	$AcImageCall = new AcImageCall();
-        header('Content-type: text/html; charset=utf-8');
+        //header('Content-type: text/html; charset=utf-8');
         $translit = $_GET['id'];
+        
+        $StaticPagesObject = new StaticPage();
+        $countStaticPageByTranslit = $StaticPagesObject->getCountStaticPageByTranslit($translit);
+        if ($countStaticPageByTranslit > 0) {
+        	$staticPageInfo = $StaticPagesObject->getStaticPageByTranslit($translit);
+        	$this->render('site/face/static_page', array('staticPageInfo' => $staticPageInfo, 'AcImageCall' => $AcImageCall));
+        	return true;
+        }
+        
         $shop = new Shop();
         $catalog = new Catalog();
         $product = new Product();

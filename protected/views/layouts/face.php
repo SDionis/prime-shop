@@ -87,13 +87,13 @@ header('Content-Type: text/html;charset=UTF-8');
 		      		<?
                     if (!empty($this->out_menu)) {
 			      		$i=0;
-			      		if (count($this->out_menu) > 6) {
+			      		if (count($this->out_menu) > 5) {
 			      			$j=0;
 	                    	foreach ($this->out_menu as $key => $row) {
-								if ($j == 5) {
+								if ($j == 4) {
 									echo '<li><a href="#">Другое<i class="icon-caret-down"></i></a><ul>';
 								}
-								if ($j >= 5 || ($j + 1) < count($this->out_menu)) {
+								if ($j >= 4 || ($j + 1) < count($this->out_menu)) {
 									echo '<li><a href="'.$row['link'].'">'.$row['name'].'</a></li>';
 								}
 								if (($j + 1) == count($this->out_menu)) {
@@ -107,6 +107,10 @@ header('Content-Type: text/html;charset=UTF-8');
 								echo '<li><a href="'.$row['link'].'">'.$row['name'].'</a></li>';
 							}
 	                    }
+                    }
+                    echo '<li><a href="#">Статические станицы<i class="icon-caret-down"></i></a><ul>';
+                    foreach($this->static_pages as $key => $row) {
+                    	echo '<li><a href="'.$row['translit'].'">'.$row['title'].'</a></li>';
                     }
 		      		?>
 		      		<!--<li>
@@ -137,7 +141,9 @@ header('Content-Type: text/html;charset=UTF-8');
 		      		</li>-->
                     <!--<li><a href="/">Категории</a></li>-->
 		      	</ul><!--end nav-->
-
+				<?
+				//print_r($this->static_pages);
+				?>
 				</div>
 			</div><!--end container-->
 		</div><!--end subHeader-->

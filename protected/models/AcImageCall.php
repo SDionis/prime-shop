@@ -65,6 +65,23 @@ class AcImageCall {
         return $out_name_full_show;
 	}
 	
+	public function resize_simple($filename, $width, $height) {
+		$index_point = Yii::app()->controller->index_point;
+		$image = new image($filename);
+		$image->resize($width, $height);
+		
+		$img_name_full = $filename;
+		$img_name_full_parts = explode('/', $img_name_full);
+		$img_name = $img_name_full_parts[count($img_name_full_parts)-1];
+		$img_name_parts = explode('.', $img_name, 2);
+		$out_name = $img_name_parts[0].'_'.$width.'x'.$height.'_resized.'.$img_name_parts[1];
+		$out_name_full = $_SERVER['DOCUMENT_ROOT'].$index_point.'img/'.$out_name;
+		$out_name_full_show = $index_point.'img/'.$out_name;
+		
+		$image->save($out_name_full);
+		return $out_name_full_show;
+	}
+	
 	public function grab_image($url,$saveto){
 		
 		/*$ch = curl_init ($url);

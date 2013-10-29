@@ -5374,3 +5374,425 @@ Stack trace:
 #9 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
 #10 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
 REQUEST_URI=/partener_shop/printeryi_Epson
+2013/10/28 00:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "StaticPagesУвше".' in /home/logika/public_html/partener_shop/framework/web/CController.php:483
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(270): CController->missingAction('StaticPages????...')
+#1 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('StaticPages????...')
+#2 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('control/StaticP...')
+#3 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/logika/public_html/partener_shop/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/partener_shop/control/StaticPages%D0%A3%D0%B2%D1%88%D0%B5
+---
+2013/10/28 17:52:31 [error] [php] include(product.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/logika/public_html/partener_shop/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/controllers/ControlController.php(749): spl_autoload_call()
+#1 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionStaticPages()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#6 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/StaticPages
+2013/10/28 18:14:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "editStaticPage".' in /home/logika/public_html/partener_shop/framework/web/CController.php:483
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(270): CController->missingAction('editStaticPage')
+#1 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('editStaticPage')
+#2 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('control/editSta...')
+#3 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/logika/public_html/partener_shop/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/partener_shop/control/editStaticPage?id=2
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/control/StaticPages
+---
+2013/10/28 18:15:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "editStaticPage".' in /home/logika/public_html/partener_shop/framework/web/CController.php:483
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(270): CController->missingAction('editStaticPage')
+#1 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('editStaticPage')
+#2 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('control/editSta...')
+#3 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/logika/public_html/partener_shop/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/partener_shop/control/editStaticPage?id=2
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/control/StaticPages
+---
+2013/10/28 23:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "StaticPagesEdit".' in /home/logika/public_html/partener_shop/framework/web/CController.php:483
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(270): CController->missingAction('StaticPagesEdit')
+#1 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): CController->run('StaticPagesEdit')
+#2 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('control/StaticP...')
+#3 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/logika/public_html/partener_shop/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/partener_shop/control/StaticPagesEdit
+---
+2013/10/29 01:33:36 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/protected/models/StaticPage.php:59)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages?id=2
+2013/10/29 01:33:53 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/protected/models/StaticPage.php:59)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages?id=2
+2013/10/29 01:34:51 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/protected/models/StaticPage.php:59)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages?id=2
+2013/10/29 01:36:33 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/protected/models/StaticPage.php:59)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages?id=2
+2013/10/29 01:37:10 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/protected/models/StaticPage.php:60)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages?id=2
+2013/10/29 01:39:41 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/protected/models/StaticPage.php:65)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages?id=2
+2013/10/29 01:39:46 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/protected/models/StaticPage.php:65)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages?id=2
+2013/10/29 01:41:28 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/protected/models/StaticPage.php:65)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages?id=2
+2013/10/29 01:41:34 [error] [php] Cannot modify header information - headers already sent by (output started at /home/logika/public_html/partener_shop/protected/controllers/ControlController.php:766) (/home/logika/public_html/partener_shop/protected/views/layouts/control.php:2)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(95): ControlController->renderInternal()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(784): ControlController->renderFile()
+#2 /home/logika/public_html/partener_shop/protected/controllers/ControlController.php(777): ControlController->render()
+#3 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages?id=2
+2013/10/29 01:41:38 [error] [php] Cannot modify header information - headers already sent by (output started at /home/logika/public_html/partener_shop/protected/controllers/ControlController.php:766) (/home/logika/public_html/partener_shop/protected/views/layouts/control.php:2)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(95): ControlController->renderInternal()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(784): ControlController->renderFile()
+#2 /home/logika/public_html/partener_shop/protected/controllers/ControlController.php(777): ControlController->render()
+#3 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages?id=2
+2013/10/29 01:42:23 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/protected/models/StaticPage.php:65)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages?id=2
+2013/10/29 01:44:48 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (/home/logika/public_html/partener_shop/protected/models/StaticPage.php:65)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#5 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages?id=2
+2013/10/29 12:42:26 [error] [php] Cannot modify header information - headers already sent by (output started at /home/logika/public_html/partener_shop/protected/controllers/ControlController.php:776) (/home/logika/public_html/partener_shop/protected/controllers/ControlController.php:783)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/editStaticPages?id=2
+2013/10/29 14:31:04 [error] [php] imagesx(): supplied argument is not a valid Image resource (/home/logika/public_html/partener_shop/protected/models/image.php:48)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/views/site/Static_pages.php(94): AcImageCall->resize_simple()
+#1 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(126): require()
+#2 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(95): ControlController->renderInternal()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(869): ControlController->renderFile()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(782): ControlController->renderPartial()
+#5 /home/logika/public_html/partener_shop/protected/controllers/ControlController.php(761): ControlController->render()
+#6 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionStaticPages()
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#9 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#10 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#11 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/StaticPages
+2013/10/29 14:31:39 [error] [php] imagesx(): supplied argument is not a valid Image resource (/home/logika/public_html/partener_shop/protected/models/image.php:48)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/views/site/Static_pages.php(94): AcImageCall->resize_simple()
+#1 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(126): require()
+#2 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(95): ControlController->renderInternal()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(869): ControlController->renderFile()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(782): ControlController->renderPartial()
+#5 /home/logika/public_html/partener_shop/protected/controllers/ControlController.php(761): ControlController->render()
+#6 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionStaticPages()
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#9 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#10 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#11 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/StaticPages
+2013/10/29 14:31:41 [error] [php] imagesx(): supplied argument is not a valid Image resource (/home/logika/public_html/partener_shop/protected/models/image.php:48)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/views/site/Static_pages.php(94): AcImageCall->resize_simple()
+#1 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(126): require()
+#2 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(95): ControlController->renderInternal()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(869): ControlController->renderFile()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(782): ControlController->renderPartial()
+#5 /home/logika/public_html/partener_shop/protected/controllers/ControlController.php(761): ControlController->render()
+#6 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionStaticPages()
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#9 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#10 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#11 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/StaticPages
+2013/10/29 14:33:18 [error] [php] imagesx(): supplied argument is not a valid Image resource (/home/logika/public_html/partener_shop/protected/models/image.php:48)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/views/site/Static_pages.php(94): AcImageCall->resize_simple()
+#1 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(126): require()
+#2 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(95): ControlController->renderInternal()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(869): ControlController->renderFile()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(782): ControlController->renderPartial()
+#5 /home/logika/public_html/partener_shop/protected/controllers/ControlController.php(761): ControlController->render()
+#6 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionStaticPages()
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#9 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#10 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#11 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/StaticPages
+2013/10/29 14:33:19 [error] [php] imagesx(): supplied argument is not a valid Image resource (/home/logika/public_html/partener_shop/protected/models/image.php:48)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/views/site/Static_pages.php(94): AcImageCall->resize_simple()
+#1 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(126): require()
+#2 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(95): ControlController->renderInternal()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(869): ControlController->renderFile()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(782): ControlController->renderPartial()
+#5 /home/logika/public_html/partener_shop/protected/controllers/ControlController.php(761): ControlController->render()
+#6 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionStaticPages()
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#9 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#10 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#11 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/StaticPages
+2013/10/29 14:33:34 [error] [php] imagesx(): supplied argument is not a valid Image resource (/home/logika/public_html/partener_shop/protected/models/image.php:48)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/views/site/Static_pages.php(95): AcImageCall->resize_simple()
+#1 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(126): require()
+#2 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(95): ControlController->renderInternal()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(869): ControlController->renderFile()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(782): ControlController->renderPartial()
+#5 /home/logika/public_html/partener_shop/protected/controllers/ControlController.php(761): ControlController->render()
+#6 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionStaticPages()
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#9 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#10 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#11 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/StaticPages
+2013/10/29 14:33:36 [error] [php] imagesx(): supplied argument is not a valid Image resource (/home/logika/public_html/partener_shop/protected/models/image.php:48)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/views/site/Static_pages.php(95): AcImageCall->resize_simple()
+#1 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(126): require()
+#2 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(95): ControlController->renderInternal()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(869): ControlController->renderFile()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(782): ControlController->renderPartial()
+#5 /home/logika/public_html/partener_shop/protected/controllers/ControlController.php(761): ControlController->render()
+#6 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionStaticPages()
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#9 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#10 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#11 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/StaticPages
+2013/10/29 14:35:02 [error] [php] imagesx(): supplied argument is not a valid Image resource (/home/logika/public_html/partener_shop/protected/models/image.php:48)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/views/site/Static_pages.php(95): AcImageCall->resize_simple()
+#1 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(126): require()
+#2 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(95): ControlController->renderInternal()
+#3 /home/logika/public_html/partener_shop/framework/web/CController.php(869): ControlController->renderFile()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(782): ControlController->renderPartial()
+#5 /home/logika/public_html/partener_shop/protected/controllers/ControlController.php(761): ControlController->render()
+#6 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionStaticPages()
+#7 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#9 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#10 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#11 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/StaticPages
+2013/10/29 14:52:41 [error] [php] Invalid argument supplied for foreach() (/home/logika/public_html/partener_shop/protected/models/StaticPage.php:72)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#2 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#4 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages
+2013/10/29 14:53:09 [error] [php] Cannot modify header information - headers already sent by (output started at /home/logika/public_html/partener_shop/protected/models/StaticPage.php:81) (/home/logika/public_html/partener_shop/protected/views/layouts/control.php:2)
+Stack trace:
+#0 /home/logika/public_html/partener_shop/framework/web/CBaseController.php(95): ControlController->renderInternal()
+#1 /home/logika/public_html/partener_shop/framework/web/CController.php(784): ControlController->renderFile()
+#2 /home/logika/public_html/partener_shop/protected/controllers/ControlController.php(800): ControlController->render()
+#3 /home/logika/public_html/partener_shop/framework/web/actions/CInlineAction.php(49): ControlController->actionEditStaticPages()
+#4 /home/logika/public_html/partener_shop/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/logika/public_html/partener_shop/framework/web/CController.php(286): ControlController->runAction()
+#6 /home/logika/public_html/partener_shop/framework/web/CController.php(265): ControlController->runActionWithFilters()
+#7 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(282): ControlController->run()
+#8 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/logika/public_html/partener_shop/index.php(16): CWebApplication->run()
+REQUEST_URI=/partener_shop/control/EditStaticPages
+2013/10/29 15:36:40 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "FaceController.static_pages".' in /home/logika/public_html/partener_shop/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/controllers/FaceController.php(104): CComponent->__set('static_pages', Array)
+#1 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#2 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#4 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/logika/public_html/partener_shop/index.php(16): CApplication->run()
+#6 {main}
+REQUEST_URI=/partener_shop/Epson_printer_Epson_Stylus_Photo_895_s_snpch
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/printeryi_Epson
+---
+2013/10/29 15:36:40 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "FaceController.static_pages".' in /home/logika/public_html/partener_shop/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/controllers/FaceController.php(104): CComponent->__set('static_pages', Array)
+#1 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#2 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#4 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/logika/public_html/partener_shop/index.php(16): CApplication->run()
+#6 {main}
+REQUEST_URI=/partener_shop/css/screen.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/Epson_printer_Epson_Stylus_Photo_895_s_snpch
+---
+2013/10/29 15:36:40 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "FaceController.static_pages".' in /home/logika/public_html/partener_shop/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/controllers/FaceController.php(104): CComponent->__set('static_pages', Array)
+#1 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#2 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#4 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/logika/public_html/partener_shop/index.php(16): CApplication->run()
+#6 {main}
+REQUEST_URI=/partener_shop/css/main.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/Epson_printer_Epson_Stylus_Photo_895_s_snpch
+---
+2013/10/29 15:36:40 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "FaceController.static_pages".' in /home/logika/public_html/partener_shop/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/controllers/FaceController.php(104): CComponent->__set('static_pages', Array)
+#1 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#2 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#4 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/logika/public_html/partener_shop/index.php(16): CApplication->run()
+#6 {main}
+REQUEST_URI=/partener_shop/css/print.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/Epson_printer_Epson_Stylus_Photo_895_s_snpch
+---
+2013/10/29 15:36:41 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "FaceController.static_pages".' in /home/logika/public_html/partener_shop/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/logika/public_html/partener_shop/protected/controllers/FaceController.php(104): CComponent->__set('static_pages', Array)
+#1 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(359): FaceController->__construct('face', NULL)
+#2 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(276): CWebApplication->createController('face/ShowCatsOr...')
+#3 /home/logika/public_html/partener_shop/framework/web/CWebApplication.php(141): CWebApplication->runController('face/ShowCatsOr...')
+#4 /home/logika/public_html/partener_shop/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/logika/public_html/partener_shop/index.php(16): CApplication->run()
+#6 {main}
+REQUEST_URI=/partener_shop/css/form.css
+HTTP_REFERER=http://eggspack.com.ua/partener_shop/Epson_printer_Epson_Stylus_Photo_895_s_snpch
+---
